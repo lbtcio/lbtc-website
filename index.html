@@ -16,7 +16,7 @@
     <link href="css/themify-icons.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <link href="css/colors/dark-blue.css" id="color-scheme" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/add.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/add01.css" rel="stylesheet" type="text/css">
     <style type="text/css">
         /* .foo{overflow: hidden}; */
         
@@ -33,6 +33,12 @@
             font-size: 20px;
         }
     </style>
+    <style id =“antiClickjack”>
+        body {
+            display: none;
+        } 
+    </style>
+    
 </head>
 
 <body>
@@ -759,20 +765,29 @@
                             Full Node Wallet
                         </p>
                         <p class="wallet-des">
-                            Linux 64bit (v1.0.8)
+                            Linux 64bit (v1.0.9)
                         </p>
                         <p class="wallet-updata">
-                            Update date：2018.03.03
+                            Update date：2018.03.15
                         </p>
                         <ul>
                             <li class="wallet-download">
-                                <a href="http://downloadwallet.lbtc.io/index.php/s/1jBJbBBeSKLid8z/download" target="_blank">
+                                <a href="http://downloadwallet.lbtc.io/index.php/s/2J7MEupUaeWaHBa/download" style="margin-right: 15px;" target="_blank">
                                 <!-- <a style="cursor:pointer;text-decoration: line-through;"> -->
                                     <img src="./img/clients/download-black.png" alt="LBTC" style="height:18px">
-                                    Full Node Wallet
+                                    Ubuntu16.04
                                 </a>
                                 <!-- <p>Uploading…</p> -->
-                                <p>13d8b63e408d1583e768c6d1a12e9f1d</p>
+                                <p>2ce2d3bbfedae37a8a9321401589d4ed</p>
+                            </li>
+                            <li class="wallet-download">
+                                <a href="http://downloadwallet.lbtc.io/index.php/s/SDqkMaere8nN6mP/download" target="_blank">
+                                <!-- <a style="cursor:pointer;text-decoration: line-through;"> -->
+                                    <img src="./img/clients/download-black.png" alt="LBTC" style="height:18px">
+                                    CentOS7.1
+                                </a>
+                                <!-- <p>Uploading…</p> -->
+                                <p>4d0eb6b08031103ebb35ecfe951081e8</p>
                             </li>
                             <li class="wallet-download">
                                 <a href="http://lbtc.io/download/Full Node Wallet Installation Guide.pdf" target="_blank" download="Full Node Wallet Installation Guide.pdf">
@@ -1022,6 +1037,14 @@
     <!-- End Back To Top -->
 
     <!-- Scripts -->
+    <script type="text/javascript">
+        if (self == top) {
+            var theBody = document.getElementsByTagName('body')[0];
+            theBody.style.display = "block";
+        } else {
+            top.location = self.location;
+        }
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>

@@ -1,0 +1,39 @@
+.foo:hover {box-shadow: 0px 4px 14px darkgray;}
+.call-us {color:#ddd;margin-top: 10px;margin-bottom: 10px}
+.call-us span {background-color: #ddd;display: inline-block;width: 16px;height: 16px;position: relative;top: 3px}
+.call-us img {vertical-align: top;position: relative;width: 100%;height: 100%;}
+.call-us:hover {color: #3366AF}
+.call-us:hover span{background-color: #3366AF}
+
+#call-us{
+
+}
+#call-us h3{
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 400;
+  /* width: 40%; */
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+#call-us .links-item{
+  width: 180px;
+  margin: 0 auto;
+}
+.wallet-item {
+  min-height: 481px;
+}
+.wallet-des {
+  margin-top: 0px;
+}
+.wallet-updata {
+  margin-bottom: -4px;
+}
+.wallet-download p{
+  margin: 0;
+  margin-bottom: -6px;
+}
+.wallet-download a img {
+  margin-right: -2px;
+}
