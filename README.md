@@ -1,2 +1,2 @@
-# website
-The official Lightning Bitcoin website
+# lbtc
+lightningbitcoin.io

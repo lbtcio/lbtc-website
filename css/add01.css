@@ -20,6 +20,10 @@
 #call-us .links-item{
   width: 180px;
   margin: 0 auto;
+  text-align: left;
+}
+.links-item .ion-social-github::before {
+  font-size: 16px;
 }
 .wallet-item {
   min-height: 481px;
@@ -37,3 +41,4 @@
 .wallet-download a img {
   margin-right: -2px;
 }
+
