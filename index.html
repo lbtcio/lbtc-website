@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,37 +8,59 @@
     <meta name="keywords" content="lbtc官网,lightning network,闪电比特币,闪电比特币官网,lbtc,LBTC,Lightning Bitcoin,Lightning,lightningbitcoin">
     <meta name="description" content="" />
     <title>Lightning Bitcoin</title>
-    <link href="img/favicon.ico" rel="icon shortcut">
+    <link href="img/assets/favicon.ico" rel="icon" type="image/png">
     <link href="css/plugins.css" rel="stylesheet" type="text/css">
     <link href="css/theme.css" rel="stylesheet" type="text/css">
     <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link href="css/et-line-icons.css" rel="stylesheet" type="text/css">
     <link href="css/themify-icons.css" rel="stylesheet" type="text/css">
-    <link href="css/custom.css" rel="stylesheet" type="text/css">
-    <link href="css/colors/dark-blue.css" id="color-scheme" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/add01.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        /* .foo{overflow: hidden}; */
-        
-        @media (min-width: 992px) {
-            .col-md-3 {
-                text-align: center
-            }
-        }
-        .navbar-nav > li {
-            padding: 0px 0px;
-        }
-        .wallet-item .ion-social-github:before {
-            content: "\f233";
-            font-size: 20px;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="css/font-awesome.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400%7COpen+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="css/custom.css?07131810" rel="stylesheet" type="text/css">
+    <link href="css/colors/blue.css" id="color-scheme" rel="stylesheet" type="text/css">
+    <!-- ICON -->
+    <link rel="stylesheet" href="icons\chainnode\style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117348693-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-117348693-2');
+    </script>
     <style>
-        body {
-            display: none;
-        } 
+        .ellipsis_2 {
+            overflow : hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient: vertical;
+            height: 54px;
+        }
+        .ellipsis_5 { 
+            overflow : hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp:5;
+            -webkit-box-orient: vertical;
+            height: 126px;
+        }
+        
+        #blog-grid img {
+            position: relative;
+        }
+        
+        #blog-grid img::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url('./img/backgrounds/news.png') no-repeat center;
+        }
     </style>
-    
 </head>
 
 <body>
@@ -57,7 +79,8 @@
                         <span class="icon-bar bottom-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="img/logo-w-t.png" class="logo-dark" alt="Lightning Bitcoin">
+                        <!-- <img src="img/assets/logo-light.png" class="logo-light" alt="#"> -->
+                        <img src="img/logo-w-t-light.png" class="logo-dark" alt="#">
                     </a>
                 </div>
             </div>
@@ -66,196 +89,452 @@
                 <div class="container">
                     <ul class="nav navbar-nav menu-right">
 
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#features">Features</a>
-                        </li>
-                        <li>
-                            <a href="#roadmap">Roadmap</a>
-                        </li>
-                        <li>
-                            <a href="#team">Team</a>
-                        </li>
-                        <li>
-                            <a href="#partnership">Partnership</a>
-                        </li>
-                        <li>
-                            <a href="#download">Wallet</a>
-                        </li>
-                        <li>
-                            <a href="http://explorer.lbtc.io/" target =_blank >Explorer</a>
-                        </li>
-                        <li>
-                            <a href="#faq">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#call-us">Links & Contact US</a>
+                        <li class="megamenu">
+                            <a href="#home" class="btn-scroll">Home</a>
                         </li>
 
-                        <!--  <li class="nav-separator"></li>
+                        <li class="megamenu">
+                            <a href="team.html" class="btn-scroll">Team</a>
+                        </li>
 
-                            <li><a href="index.html">EN</a><a href="index_cn.html" target="_self">中文</a>
-                            </li>   
-                        -->
+                        <li class="megamenu">
+                            <a href="#download" class="btn-scroll">Download</a>
+                        </li>
+                        
+                        <li class="dropdown"><a class="dropdown-toggle">Explorers<i class="ti-angle-down"></i></a> 
+                            <ul class="dropdown-menu">
+                                <li><a href="https://explorer.lbtc.io/" target=_blank>Mainnet Explorer</a></li>
+                                <li><a href="http://test-explorer.lbtc.io/" target=_blank>Testnet Explorer</a></li> 
+                                <!-- <li><a href="https://lbtcscan.io/" target=_blank>Alpha Explorer</a></li> -->
+                            </ul>
+                        </li>  
+                        
+                        <li class="megamenu">
+                            <a href="#footer-1" class="btn-scroll">Community</a>
+                        </li>
+
+                        <li class="megamenu">
+                            <a href="https://chat.lbtc.io/topic/37-faq/" class="btn-scroll" target=_blank>FAQ</a>
+                        </li>
+                        
+                        <li class="nav-separator"></li>
+
+                        <li class="megamenu">
+                            <a href="index-cn.html">
+                                <img src="./img/lang/zh.png" alt="">
+                            </a>
+                        </li>
+
+                        <li class="megamenu">
+                            <a href="">
+                                <img src="./img/lang/en.png" alt="">
+                            </a>
+                        </li>
+
                     </ul>
 
                 </div>
             </div>
+
         </div>
     </nav>
     <!-- End Header -->
 
-    <!-- Page Hero -->
-    <section id="home" class="hero-fullscreen bg-img-8">
+    <!-- Hero -->
+    <section id="home" class="hero-fullscreen parallax overlay bg-img-banner-1">
         <div class="hero-container">
-            <div class="hero-content">
+            <div class="hero-content text-center">
+                
+                <div class="col-sm-12 mr-auto white text-center pt20">   
+                    <h3 class="mt10">Make Transfers</h3>
+                    <h1 class="large mt20">Fast as
+                        <span class="bold">Lightning</span>
+                    </h1>
+                    <p></p>
+                    <a href="web/viewer.html" class="btn-wp btn btn-lg btn-primary btn-round btn-scroll mt40" style="font-size: 14px;" target="_blank">
+                        White Paper
+                    </a>
+                </div>
+                <a href="#about" class="scroll-btn"><i class="ion-chevron-down"></i></a>
+            </div>
+        </div>   
+    </section>
+    <!-- End Hero -->
 
-                <div class="content-slider container">
-                    <div class="white">
-                    </div>
-                    <div class="white">
+    <!-- About -->
+    <section id="about" class="bg-grey">
+        <div class="container pb40">
+            <div class="vertical-align">
 
-                        <img src="img/logo-w-t-light.png" alt="Lightning Bitcoin"/>
-                        <h5 class="subheading mt10">Make Bitcoin Transfer</h5>
-                        <h1 class="large mt20">Fast as
-                            <span class="bold">Lightning</span>
-                        </h1>
-                        <hr class="separator">
-                        <p class="white"></p>
-                        <a href="#download" class="btn btn-lg btn-primary btn-circle btn-scroll mt40 hidden-xs">download wallet</a>
+                <div class="col-md-6 text-left pr30 mt40 mb40">
+                    <h2>Introduction</h2>
+                    <p>Lightning Bitcoin (LBTC) is a fully decentralized Internet-of-value protocol for global payments. The
+                        specific applications include peer-to-peer transactions and exchange platforms. Any users that operate on the LBTC protocol can enjoy instant, secure and nearly free global financial transactions of any
+                        size. </p>
+                    <p>Lightning Bitcoin’s on-chain governance system enables LBTC holders to vote for the blockchain improvement
+                        proposals and the delegates who maintain the network as Lightning Nodes. It solves the problems of
+                        centralization of bitcoin by incorporating all participants in the Lightning Bitcoin ecosystem into
+                        the decision-making process.</p>
+                </div>
+
+                <div class="col-md-6  mt50 mb50">
+                    <div class="video-container" style="overflow: visible;">
+                        <!-- <iframe src="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff" allowfullscreen></iframe> -->
+                        <video id="intr-video" width="100%" controls poster="./video/poster.png">
+                            <source src="./video/ins_en.mp4"  type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
 
             </div>
-            <a href="#features" class="scroll-btn">
-                <i class="ion-chevron-down"></i>
-            </a>
         </div>
     </section>
-    <!-- End Page Hero -->
+    <!-- End About -->
+
 
     <!-- Features -->
-    <section id="features" class="pt80 pb110">
-        <div class="container">
+    <section id="features" class="parallax overlay bg-img-1">
+        <div class="container pt80 pb80">
+            
             <div class="row">
 
-                <div class="col-md-8 section-heading pb20">
-                    <h2>
-                        <span class="bold">Features</span>
-                    </h2>
+                <div class="col-md-12 section-heading white">
+                    <h2>Features</h2>
                     <hr class="separator">
                 </div>
 
-                <div class="col-md-10 mr-auto text-center">
-                    <div class="icon-tabs-centered">
+                <div class="col-md-4 col-sm-6 feature-left pb20 white">
+                    <i class="icon-tab ion-ios-people size-3x color"></i>
+                    <i class="icon-tab ion-ios-people back-icon"></i>
+                    <div class="feature-left-content">
+                        <h5>
+                            Autonomous
+                        </h5>
+                        <p>On-chain governance system incorporates all holders within the LBTC blockchain network into
+                                the decision-making process.</p>
+                    </div>
+                </div>
 
-                        <ul id="iconTabs" class="nav nav-tabs nav-tabs-center">
-                            <li class="active">
-                                <a href="#tab-i1" data-toggle="tab">
-                                    <span class="icon-tab ion-ios-people-outline"></span>
-                                    <span>Community Autonomy</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#tab-i2" data-toggle="tab">
-                                    <span class="icon-tab ion-ios-bolt-outline"></span>
-                                    <span>Rapidity</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#tab-i3" data-toggle="tab">
-                                    <span class="icon-tab ion-ios-pie-outline"></span>
-                                    <span>Fair Distribution</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#tab-i4" data-toggle="tab">
-                                    <span class="icon-tab ion-ios-list-outline"></span>
-                                    <span>Smart Contract</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#tab-i5" data-toggle="tab">
-                                    <span class="icon-tab ion-ios-gear-outline"></span>
-                                    <span>DApp</span>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="col-md-4 col-sm-6 feature-left pb20 white">
+                    <i class="ion-android-share-alt size-3x color"></i>
+                    <i class="ion-android-share-alt back-icon"></i>
+                    <div class="feature-left-content">
+                        <h5>
+                            Decentralized
+                        </h5>
+                        <p>DPoS allows LBTC coin holders to choose 101 lightning nodes to validate transactions, promoting
+                                greater decentralization.</p>
+                    </div>
+                </div>
 
-                        <div id="myTabContent" class="tab-content">
+                <div class="col-md-4 col-sm-6 feature-left pb20 white">
+                    <i class="ion-code-working size-3x color"></i>
+                    <i class="ion-code-working back-icon"></i>
+                    <div class="feature-left-content">
+                        <h5>
+                            Scalable
+                        </h5>
+                        <p>DPoS provides a high level of scalability at the cost of limiting the number of validators
+                                on the LBTC blockchain network.</p>
+                    </div>
+                </div>
 
-                            <div class="tab-pane fade active in" id="tab-i1">
-                                <p>With DPoS consensus mechanism, voting and bookkeeping rights can be separated, which prevents
-                                    abuse or control of the system by any party. Users can maintain the policy discourse
-                                    as long as they possess coins, thus achieve the true autonomy.</p>
-                            </div>
-                            <div class="tab-pane fade" id="tab-i2">
-                                <p>3 seconds per block with 2M blocksize design could support 1,000 to 10,000 transactions per
-                                    second, and completely solved the most contended bitcoin congestion problem, and increase
-                                    the adption and utilization.</p>
-                            </div>
-                            <div class="tab-pane fade" id="tab-i3">
-                                <p>The original bitcoin holders can claim LBTC at a 1:1 ratio, the rest will be distributed
-                                    through forging in a convergent manner, while the block rewards halves in every four
-                                    years.</p>
-                            </div>
-                            <div class="tab-pane fade" id="tab-i4">
-                                <p>With built-in smart contract, digital assets can be issued and distributed, and applications
-                                    can be built on blockchain, making LBTC a valuable and functional token.</p>
-                            </div>
-                            <div class="tab-pane fade" id="tab-i5">
-                                <p>Support all kinds of DApp development, including zero knowledge proof (included in the plan),
-                                    cross-chain atomic transactions.</p>
-                            </div>
+                <div class="col-md-4 col-sm-6 feature-left pb20 white">
+                    <i class="ion-ios-bolt size-3x color"></i>
+                    <i class="ion-ios-bolt back-icon"></i>
+                    <div class="feature-left-content">
+                        <h5>
+                            Instant
+                        </h5>
+                        <p>Payments using LBTC protocol get confirmed in seconds.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 feature-left pb20 white">
+                    <i class="ion-social-bitcoin size-3x color"></i>
+                    <i class="ion-social-bitcoin back-icon"></i>
+                    <div class="feature-left-content">
+                        <h5>
+                            Nearly-Free
+                        </h5>
+                        <p>The transaction fees could be as low as 0.00001 LBTC per transaction.</p>
+                    </div>
+                </div>
 
+                <div class="col-md-4 col-sm-6 feature-left pb20 white">
+                    <i class="ion-android-checkmark-circle size-3x color"></i>
+                    <i class="ion-android-checkmark-circle back-icon"></i>
+                    <div class="feature-left-content">
+                        <h5>
+                            Secure
+                        </h5>
+                        <p>Built on the backbone of Bitcoin’s infrastructure, which has a nine-year track record of
+                                stable network.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </section>
+
+
+    <!-- News -->
+    <section id="news" class="bg-grey">
+        <div class="container pt110 pb80">
+            <div class="row home-blog-grid">
+
+                <div class="col-md-12 section-heading">
+                    <h2>News</h2>
+                    <hr class="separator">
+                </div>
+
+                <div class="blog-grid blog-columns cbp" id="blog-grid">
+
+                    <div class="cbp-item wander lifestyle bg-white">
+                        <div class="post-date">
+                            <h4 class="month">Jan</h4>
+                            <h3 class="day">8</h3>
+                            <span class="year">2019</span>
+                        </div>
+                        <a href="https://medium.com/lightning-bitcoin-blog/monthly-report-2018-december-ee1bfb9f1f0" class="cbp-caption" target=_blank>
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="https://cdn-images-1.medium.com/max/800/1*j7c8iAOfe6f1NvvUDG48PA.jpeg" alt="#">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-desc">
+                                            <i class="ion-android-more-horizontal"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="blog-thumb-desc">
+                            <a class="link-to-post" href="https://medium.com/lightning-bitcoin-blog/monthly-report-2018-december-ee1bfb9f1f0" target=_blank>
+                                <h4 class="ellipsis_2">[Monthly Report] 2018 December</h4>
+                            </a>
+                            <p class="excerpt ellipsis_5">[Monthly Report]2018 December</p>
+                            <a class="read-more-link btn-appear" href="https://medium.com/lightning-bitcoin-blog/monthly-report-2018-december-ee1bfb9f1f0" target=_blank>
+                                <span>Read More
+                                    <i class="ion-android-arrow-forward"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cbp-item wander lifestyle bg-white">
+                        <div class="post-date">
+                            <h4 class="month">Jan</h4>
+                            <h3 class="day">8</h3>
+                            <span class="year">2019</span>
+                        </div>
+                        <a href="https://medium.com/lightning-bitcoin-blog/weekly-report-january-8th-91b110d3258f" class="cbp-caption" target=_blank>
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="https://cdn-images-1.medium.com/max/600/1*FJAINhUK_tnGVfve572PwA.png" alt="#">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-desc">
+                                            <i class="ion-android-more-horizontal"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="blog-thumb-desc">
+                            <a class="link-to-post" href="https://medium.com/lightning-bitcoin-blog/weekly-report-january-8th-91b110d3258f" target=_blank>
+                                <h4 class="ellipsis_2">[Weekly Report] January 8th</h4>
+                            </a>
+                            <p class="excerpt ellipsis_5">Recently,LBTC developer team have improved the function of token issuing which is running in the test networking with satisfactory performance.</p>
+                            <a class="read-more-link btn-appear" href="https://medium.com/lightning-bitcoin-blog/weekly-report-january-8th-91b110d3258f" target=_blank>
+                                <span>Read More
+                                    <i class="ion-android-arrow-forward"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cbp-item wander lifestyle bg-white">
+                        <div class="post-date">
+                            <h4 class="month">Dec</h4>
+                            <h3 class="day">25</h3>
+                            <span class="year">2018</span>
+                        </div>
+                        <a href="https://medium.com/lightning-bitcoin-blog/weekly-report-december-25th-ac6f3ca1d403" class="cbp-caption" target=_blank>
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="https://cdn-images-1.medium.com/max/800/1*rquVHFCvD-FutUFKVnV6kg.png" alt="#">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-desc">
+                                            <i class="ion-android-more-horizontal"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="blog-thumb-desc">
+                            <a class="link-to-post" href="https://medium.com/lightning-bitcoin-blog/weekly-report-december-25th-ac6f3ca1d403" target=_blank>
+                                <h4 class="ellipsis_2">[Weekly Report] December 25th</h4>
+                            </a>
+                            <p class="excerpt ellipsis_5">LBTC has launched on GJ exchange.</p>
+                            <a class="read-more-link btn-appear" href="https://medium.com/lightning-bitcoin-blog/weekly-report-december-25th-ac6f3ca1d403" target=_blank>
+                                <span>Read More
+                                    <i class="ion-android-arrow-forward"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cbp-item wander lifestyle bg-white">
+                        <div class="post-date">
+                            <h4 class="month">Dec</h4>
+                            <h3 class="day">12</h3>
+                            <span class="year">2018</span>
+                        </div>
+                        <a href="https://medium.com/lightning-bitcoin-blog/weekly-report-december-10th-7aee9c537a46" class="cbp-caption" target=_blank>
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="https://cdn-images-1.medium.com/max/800/1*YJWP55osQ9DXOuxciqLl8Q.png" alt="#">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-desc">
+                                            <i class="ion-android-more-horizontal"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="blog-thumb-desc">
+                            <a class="link-to-post" href="https://medium.com/lightning-bitcoin-blog/weekly-report-december-10th-7aee9c537a46" target=_blank>
+                                <h4 class="ellipsis_2">[Weekly Report] December 10th</h4>
+                            </a>
+                            <p class="excerpt ellipsis_5">Recently,lbtc developer team has been working on the testing of the new function which will support all the lbtc users to issues the customized tokens.</p>
+                            <a class="read-more-link btn-appear" href="https://medium.com/lightning-bitcoin-blog/weekly-report-december-10th-7aee9c537a46" target=_blank>
+                                <span>Read More
+                                    <i class="ion-android-arrow-forward"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End News -->
+
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="pt110 pb80">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 mr-auto text-center">
+                    <h2>Roadmap</h2>
+                    <hr class="separator">
+                </div>
+
+                <div class="col-md-12 text-center">
+
+                    <div id="myTabContent2" class="tab-content">
+                        <div class="tab-pane fade active in text-left" id="tab-c1">
+                            <div class="timeline">
+
+                                <div class="timeline-block">
+                                    <!-- <div class="timeline-bullet"></div> -->
+                                    <div class="timeline-content">
+                                        <h2></h2>
+                                        <p></p>
+                                        <span class="date"></span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-block">
+                                    <div class="timeline-bullet"></div>
+                                    <div class="timeline-content">
+                                        <h2>Forked at block height 499,999</h2>
+                                        <!-- <p>在499,999区块高度分叉</p> -->
+                                        <span class="date">2017.12.18</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-block">
+                                    <div class="timeline-bullet"></div>
+                                    <div class="timeline-content">
+                                        <h2>Mainnet launching</h2>
+                                        <!-- <p>主网上线</p> -->
+                                        <span class="date">2018.2.4</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-block">
+                                    <div class="timeline-bullet"></div>
+                                    <div class="timeline-content">
+                                        <h2>Lightning node election</h2>
+                                        <!-- <p>闪电节点竞选</p> -->
+                                        <span class="date">2018.7</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-block">
+                                    <div class="timeline-bullet"></div>
+                                    <div class="timeline-content">
+                                        <h2>On-chain governance</h2>
+                                        <!-- <p>链上治理</p> -->
+                                        <span class="date">2018.9</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-block">
+                                    <div class="timeline-bullet"></div>
+                                    <div class="timeline-content">
+                                        <h2>Exchange/Gateway</h2>
+                                        <!-- <p>支付网关</p> -->
+                                        <span class="date">2018.12</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-block">
+                                    <div class="timeline-bullet"></div>
+                                    <div class="timeline-content">
+                                        <h2>Smart contract</h2>
+                                        <!-- <p>智能合约</p> -->
+                                        <span class="date">2019.Q2</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-block">
+                                    <div class="timeline-bullet"></div>
+                                    <div class="timeline-content">
+                                        <h2>Zero knowledge proof</h2>
+                                        <!-- <p>零知识证明</p> -->
+                                        <span class="date">2019.Q4</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-block">
+                                    <!-- <div class="timeline-bullet"></div> -->
+                                    <div class="timeline-content">
+                                        <h2></h2>
+                                        <p></p>
+                                        <span class="date"></span>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    <!-- End Features -->
-
-    <!-- Comparison -->
-    <section id="comparison" class="pt80 pb110 bg-img-comp">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-12 section-heading">
-                    <h2>
-                        <span class="bold" style="color:#FFF;opacity: 0.8;">Comparison</span>
-                    </h2>
-                    <hr class="separator">
-                </div>
-                <div class="col-md-12">
-                    <img style="opacity: 0.9;" src="img/comparison-en.jpg" class="img-responsive" alt="LBTC" />
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Comparison -->
-
-    <!-- Roadmap -->
-    <section id="roadmap" class="pt80 pb80">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 section-heading">
-                    <h2>
-                        <span class="bold">Roadmap</span>
-                    </h2>
-                    <hr class="separator">
-                </div>
-                <div class="col-md-1">
-                </div>
-
-                <div class="col-md-10">
-                    <img src="img/roadmap-en-01.png" class="img-responsive" alt="Lightning Bitcoin" />
-                </div>
-                <div class="col-md-1">
                 </div>
 
             </div>
@@ -263,795 +542,462 @@
     </section>
     <!-- End Roadmap -->
 
-    <!-- Team -->
-    <section id="team" class="pt90 pb120 bg-img-team">
+
+    <!-- Download -->
+    <section id="download" class="parallax overlay bg-img-5">
+        <div class="container pt110 pb80">
+
+            <div class="row">
+
+                <div class="col-md-12 section-heading white">
+                    <h2>Download</h2>
+                    <hr class="separator">
+                </div>
+
+                <!-- <div class="col-md-2 wallet"></div> -->
+
+                <div class="col-md-4 wallet">
+                    <div class="box box-style4 text-center wallet-item">
+                        <a href="javascript:;">
+                            <i class="ion-folder size-4x"></i>
+                        </a>
+                        <h4 style="font-weight: 400">Light Wallet</h4>
+                        <p>Windows 64bit (v0.1.1)</p>
+                        <p>Update date：2018.10.19</p>
+                        <h4>
+                            <a href="https://lbtc.io/download/lbtc-wallet-green-v0.1.1.zip">
+                                <i class="ion-ios-cloud-download-outline"></i> Light Wallet</a>
+                        </h4>
+                        <p>f5df4a51a08454b63b80317f031ef858</p>
+                        <h4>
+                            <a href="https://lbtc.io/download/Light Wallet and Block Explorer Tutorial.pdf" target="_blank" download="Light Wallet and Block Explorer Tutorial.pdf">
+                                <i class="ion-ios-cloud-download-outline"></i> Tutorial</a>
+                        </h4>
+                        <p>Safe, Convenient and Easy-to-use Support private key importing</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wallet">
+                    <div class="box box-style4 text-center wallet-item">
+                        <a href="javascript:;">
+                            <i class="ion-folder size-4x"></i>
+                        </a>
+                        <h4 style="font-weight: 400">Full Node Wallet</h4>
+                        <p>Linux 64bit (v2.0.1)</p>
+                        <p>Update date：2018.10.19</p>
+                        <h4>
+                            <a id="fua" href="https://lbtc.io/download/lbtc-fullnode-wallet-ubuntu16.04-x64-v2.0.1.tar.gz">
+                                <i class="ion-ios-cloud-download-outline"></i> Ubuntu16.04</a>
+                        </h4>
+                        <p>8b183b15270c12143c6a9a9d02389d96</p>
+                        <h4>
+                            <a id="fca" href="https://lbtc.io/download/lbtc-fullnode-wallet-centos7.1-x64-v2.0.1.tar.gz">
+                                <i class="ion-ios-cloud-download-outline"></i> CentOS7.1</a>
+                        </h4>
+                        <p>ab77fa0267cf3e0ef7c7423177d6fdc4</p>
+                        <h4>
+                            <a href="https://lbtc.io/download/Full Node Wallet Installation Guide.pdf" target="_blank" download="Full Node Wallet Installation Guide.pdf">
+                                <i class="ion-ios-cloud-download-outline"></i> Installation Guide</a>
+                        </h4>
+                        <p>More Professional, Safe and Reliable Must store a full copy of the blockchain</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wallet">
+                    <div class="box box-style4 text-center wallet-item">
+                        <a href="javascript:;">
+                            <i class="ion-folder size-4x"></i>
+                        </a>
+                        <h4 style="font-weight: 400">Android Wallet</h4>
+                        <p>Android (v1.0.2)</p>
+                        <p>Update date：2019.01.02</p>
+                        <h4>
+                            <a id="fua" href="https://lbtc.io/download/MyLBTC-v1.0.2-20190102.apk">
+                                <i class="ion-ios-cloud-download-outline"></i> MyLBTC</a>
+                        </h4>
+                        <p><img src="img/qr-MyLBTC.png" style="width: 120px; height: 120px;"></p>
+                        <p>7dbb281adece34e54e67b31b17f27f81</p>
+
+                        <h4>
+                            <a href="https://lbtc.io/download/MyLBTC User Guide.jpg" target="_blank" download="MyLBTC User Guide.jpg">
+                                <i class="ion-ios-cloud-download-outline"></i> User Guide</a>
+                        </h4>
+                        <p>On-chain Wallet & Private Key Support & Community Governance</p>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-2 wallet"></div> -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Download -->
+
+
+    <!-- ecosystem -->
+    <section id="ecosystem" class="pt110 pb80 bg-grey ">
         <div class="container">
             <div class="row">
 
                 <div class="col-md-12 section-heading">
-                    <h2 style="color:#FFF;">
-                        <span class="bold">Team</span>
-                    </h2>
+                    <h2>Ecosystem</h2>
                     <hr class="separator">
                 </div>
 
-                <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" style="margin-bottom:40px;">
-                    <div class="team-container">
-                        <div class="team-img" style="background-color:#999;">
-                            <img src="img/team-lbtc.png" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div>
-                        <div class="team-desc" style="margin-top: -10px;height: 50px;text-align: center;">
-                            <h4 style="padding-top:10px;text-transform: uppercase;">The Lightning Team</h4>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
-            <div class="row team-fullwidth">
-                
-                <div class="col-md-15 col-sm-6 col-xs-6 team"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/1-01.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Jack Zhang</h4>
-                                    <p>Founder of DAF, Founder of ChainFunder, early investor of AntChain, NEM, Metaverse, IOTA
-                                        and Qtum.</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-                <div class="col-md-15 col-sm-6 col-xs-6 team"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/3-01.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Jun Du</h4>
-                                    <p>Co-Founder of Huobi, Founder of Jinse Finance</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-                <div class="col-md-15 col-sm-6 col-xs-6 team"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/4-01.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Wenxiang Mei</h4>
-                                    <p>Founder of ETCWIN</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-                <div class="col-md-15 col-sm-6 col-xs-6 team" style="position:  relative;right:  1px;"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/5-01.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Loning</h4>
-                                    <p>Founder of aelf</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-                <div class="col-md-15 col-sm-6 col-xs-6 team" style="position:  relative;right:  1px;"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/9-02.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Qianjie Zhao</h4>
-                                    <p>Vice-president of BTCC</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-                <div class="col-md-15 col-sm-6 col-xs-6 team"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/2-01.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Dou Wang</h4>
-                                    <p>Advisor, Silicon Valley VC, Founder of JIC Capital, Blockchain Robot inventor. Community operations expert.</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-                <div class="col-md-15 col-sm-6 col-xs-6 team"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/6-01.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Gang Wu</h4>
-                                    <p>Founder of BiXin</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-                <div class="col-md-15 col-sm-6 col-xs-6 team"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/7-01.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Dong Wang</h4>
-                                    <p>Founder of Loopring</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-                <div class="col-md-15 col-sm-6 col-xs-6 team" style="position:  relative;right:  1px;"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/8-01.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Mr. Bug</h4>
-                                    <p>Co-founder of Yibite, Initiator of ChainPE</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-                <div class="col-md-15 col-sm-6 col-xs-6 team" style="position:  relative;right:  1px;"> 
-                    <div class="team-container">
-                        <div class="team-image">
-                            <img src="img/10-01.jpg" class="img-responsive" alt="Lightning Bitcoin" />
-                        </div> 
-                        <div class="team-caption">
-                            <div>
-                                <div>
-                                    <h4>Zeyu Sun</h4>
-                                    <p>Co-founder of Coldlar Wallet</p>
-                                </div>
-                            </div>
-                        </div>  
-                    </div> 
-                </div>
-
-            </div>
-
-            
-        </div>
-    </section>
-    <!-- End Team -->
-
-    <!-- Clients Section -->
-    <section id="partnership" class="pt70 pb70 bg-grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 mr-auto text-center mb20">
-                    <h2>
-                        <span class="bold">Partnership</span>
-                    </h2>
-                    <hr class="separator">
-                </div>
-            </div>
-
             <div class="row">
 
-                <div class="col-sm-8 mr-auto text-center mb30 mt30">
-                    <h3>
-                        <span>Exchange</span>
-                    </h3>
+                <div class="col-md-12 section-heading">
+                    <h3>Exchanges</h3>
                 </div>
 
-                <div class="col-md-10 col-md-offset-1">
-
-                    <div class="row">
-
-                        
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.zb.com/" target="_blank">
-                                <img src="img/clients/zb-01.jpg" class="img-responsive" alt="LBTC" style="width:100%;">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.btctrade.im/" target="_blank">
-                                <img src="img/clients/btctrade-01.jpg" class="img-responsive" alt="LBCT">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://yobit.net/en/" target="_blank">
-                                <img src="img/clients/yobit-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="http://www.bcex.ca/coins" target="_blank">
-                                <img src="img/clients/bcex-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://changenow.io/" target="_blank">
-                                <img src="img/clients/changenow-01.jpg" class="img-responsive" alt="LBTC" style="width:80%">
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.shuzibi.com/" target="_blank">
-                                <img style="width:85%" src="img/clients/shuzibi-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://kkex.com/" target="_blank">
-                                <img src="img/clients/kkex-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.exx.com/" target="_blank">
-                                <img src="img/clients/exx.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.coinegg.com/" target="_blank">
-                                <img src="img/clients/coinegg-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.aex.com/" target="_blank">
-                                <img src="img/clients/aex-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.58coin.com/" target="_blank">
-                                <img src="img/clients/58coin.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div>
-
-                        <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.okex.com/" target="_blank">
-                                <img src="img/clients/okex-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div> -->
-
-                        <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.huobi.com/" target="_blank">
-                                <img src="img/clients/huobi-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div> -->
-
-                        <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.allcoin.com/" target="_blank">
-                                <img style="margin-top:10px;" src="img/clients/allcoin-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div> -->
-
-                        <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.lbank.info/" target="_blank">
-                                <img src="img/clients/lbank-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div> -->
-
-                        <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://hitbtc.com/" target="_blank">
-                                <img src="img/clients/hitbtc-01.jpg" class="img-responsive" alt="LBTC" style="
-                                margin-bottom:  10px;
-                            ">
-                            </a>
-                        </div> -->
-
-                        <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="http://kex.com" target="_blank">
-                                <img style="margin-top:-15px;" src="img/clients/kex-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div> -->
-
-                        <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.qbtc.com/" target="_blank">
-                                <img src="img/clients/qbtc-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div> -->
-
-                        <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://cex.com/" target="_blank">
-                                <img style="margin-top:-10px;" src="img/clients/cexcom-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div> -->
-
-                        <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.btcc.com/" target="_blank">
-                                <img src="img/clients/btcc-01.jpg" class="img-responsive" alt="LBTC">
-                            </a>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-
-            <hr class="separator-hr">
-
-            <div class="row">
-
-                <div class="col-sm-8 mr-auto text-center mb30 mt30">
-                    <h3>
-                        <span>Wallet</span>
-                    </h3>
-                    <!-- <hr class="separator"> -->
-                </div>
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="row">
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://bixin.com/" target="_blank">
-                                <img src="img/clients/bixin-01.jpg" class="img-responsive" alt="Lightning Bitcoin">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.coldlar.com/" target="_blank">
-                                <img src="img/clients/kushen-01.jpg" class="img-responsive" alt="Lightning Bitcoin">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.atoken.com/" target="_blank">
-                                <img src="img/clients/atoken-02.jpg" class="img-responsive" alt="Lightning Bitcoin">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://freewallet.org/" target="_blank">
-                                <img src="img/clients/freewallet-01.jpg" class="img-responsive" alt="Lightning Bitcoin">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="http://www.taiyi.cn/" target="_blank">
-                                <img src="img/clients/taiyi-01.jpg" class="img-responsive" alt="Lightning Bitcoin">
-                            </a>
-                        </div>
-
-                        
-
-                    </div>
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.digifinex.com/" target="_blank">
+                        <img style="width:85%" src="img/ecosystem/bigfinex.png" class="img-responsive" alt="LBTC">
+                    </a>
                 </div>
 
-            </div>
-
-            <hr class="separator-hr">
-
-            <div class="row">
-
-                <div class="col-sm-8 mr-auto text-center mb30 mt30">
-                    <h3>
-                        <span>Service</span>
-                    </h3>
-                    <!-- <hr class="separator"> -->
-                </div>
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="row">
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="http://www.jinse.com/" target="_blank">
-                                <img src="img/clients/jscj-01.jpg" class="img-responsive" alt="lbtc">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="https://www.aicoin.net.cn/" target="_blank">
-                                <img src="img/clients/aicoin-01.jpg" class="img-responsive" alt="lbtc">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-6 foo">
-                            <a href="http://jgy.com/" target="_blank">
-                                <img src="img/clients/9gy.jpg" class="img-responsive" alt="lbtc">
-                            </a>
-                        </div>
-
-                    </div>
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.coinegg.com/" target="_blank">
+                        <img src="img/ecosystem/coinegg.png" class="img-responsive" alt="LBTC">
+                    </a>
                 </div>
 
-            </div>
-
-        </div>
-    </section>
-    <!-- End Clients -->
-
-    <!-- Download -->
-    <section id="download" class="bg-wallet">
-        <div class="container">
-            <div class="row pt80 pb40 ">
-                <div class="col-sm-8 mr-auto text-center mb20 white">
-                    <h2>
-                        <span class="bold">Wallet</span>
-                    </h2>
-                    <hr class="separator">
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.btctrade.im/" target="_blank">
+                        <img src="img/ecosystem/btctrade.png" class="img-responsive" alt="LBCT">
+                    </a>
                 </div>
-            </div>
 
-            <div class="row pb60">
-                <div class="col-md-2"></div>
-                <div class="wallet col-md-4 col-sm-6 col-xs-12">
-                    <div class="wallet-item">
-                        <div class="wallet-logo">
-                            <img src="./img/clients/light-wallet.png" alt="LBTC-Wallet" style="height:40px;margin-top:30px">
-                        </div>
-                        <p class="wallet-base">
-                            Light Wallet
-                        </p>
-                        <p class="wallet-des">
-                            Windows 64bit (v0.0.5)
-                        </p>
-                        <p class="wallet-updata">
-                            Update date：2018.04.05
-                        </p>
-                        <ul>
-                            <li class="wallet-download">
-                                <a href="http://downloadwallet.lbtc.io/index.php/s/xMl1g8NML1sbYIi/download" target="_blank">
-                                <!-- <a style="cursor:pointer;text-decoration: line-through;"> -->
-                                    <img src="./img/clients/download-black.png" alt="LBTC" style="height:18px">
-                                    Light Wallet
-                                </a>
-                                <!-- <p>Uploading…</p> -->
-                                <p>4390996c33e6be7dbc47577e063481e8</p>
-                            </li>
-                            <li class="wallet-download">
-                                <a style="margin-right: 15px;" href="http://lbtc.io/download/Light Wallet and Block Explorer Tutorial.pdf" target="_blank" download="Light Wallet and Block Explorer Tutorial.pdf">
-                                    <img src="./img/clients/download-black.png" alt="LBTC" style="height:18px">
-                                    Tutorial
-                                </a>
-                                <a href="https://github.com/lbtcio/lbtc-lightwallet-client" target="_blank">
-                                    <i class="ion-social-github"></i>
-                                    GitHub
-                                </a>
-                            </li>
-                            <!-- <li class="wallet-download">
-                                
-                            </li> -->
-                            <li class="wallet-download" style="border-bottom: none;color:#3c3c3c;">
-                                <p style="color:#3c3c3c;margin: 10px 0 0;">Safe, Convenient and Easy-to-use</p>
-                                <p style="color:#3c3c3c;">Support private key importing</p>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.aex.com/" target="_blank">
+                        <img src="img/ecosystem/aex.png" class="img-responsive" alt="LBTC">
+                    </a>
                 </div>
-                <div class="wallet col-md-4 col-sm-6 col-xs-12">
-                    <div class="wallet-item">
-                        <div class="wallet-logo">
-                            <img src="./img/clients/full-node-wallet.png" alt="LBTC-Wallet" srcset="" style="height:55px;margin-top:15px">
-                        </div>
-                        <p class="wallet-base">
-                            Full Node Wallet
-                        </p>
-                        <p class="wallet-des">
-                            Linux 64bit (v1.1.0)
-                        </p>
-                        <p class="wallet-updata">
-                            Update date：2018.04.05
-                        </p>
-                        <ul>
-                            <li class="wallet-download">
-                                <a href="http://downloadwallet.lbtc.io/index.php/s/fOgwzsjqzEkrSaF/download" style="margin-right: 15px;" target="_blank">
-                                <!-- <a style="cursor:pointer;text-decoration: line-through;"> -->
-                                    <img src="./img/clients/download-black.png" alt="LBTC" style="height:18px">
-                                    Ubuntu16.04
-                                </a>
-                                <!-- <p>Uploading…</p> -->
-                                <p>dc544db8f1f20393a2bdcb5ea068567d</p>
-                            </li>
-                            <li class="wallet-download">
-                                <a href="http://downloadwallet.lbtc.io/index.php/s/nCWrDuxLcicV5sR/download" target="_blank">
-                                <!-- <a style="cursor:pointer;text-decoration: line-through;"> -->
-                                    <img src="./img/clients/download-black.png" alt="LBTC" style="height:18px">
-                                    CentOS7.1
-                                </a>
-                                <!-- <p>Uploading…</p> -->
-                                <p>99ebc61a5f0d88bac2c0daf73273fe6d</p>
-                            </li>
-                            <li class="wallet-download">
-                                <a href="http://lbtc.io/download/Full Node Wallet Installation Guide.pdf" target="_blank" download="Full Node Wallet Installation Guide.pdf">
-                                    <img src="./img/clients/download-black.png" alt="LBTC" style="height:18px">
-                                    Installation Guide
-                                </a>
-                            </li>
-                            <li class="wallet-download" style="border-bottom: none;color:#3c3c3c;">
-                                <p style="color:#3c3c3c;margin: 10px 0 0;">More Professional, Safe and Reliable</p>
-                                <p style="color:#3c3c3c;">Must store a full copy of the blockchain</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2"></div>
-                <!-- <div class="wallet col-md-4 col-sm-6 col-xs-12">
-                    <div class="wallet-item">
-                        <div class="wallet-logo">
-                            <img src="./img/clients/full-node-wallet-data.png" alt="LBTC-Wallet" srcset="" style="height:40px;margin-top:30px">                            
-                        </div>
-                        <p class="wallet-base">
-                            Full Node Wallet Data
-                        </p>
-                        <p class="wallet-des">
-                            Linux 64bit
-                        </p>
-                        <p class="wallet-updata">
-                            Update date：2018.02.13
-                        </p>
-                        <ul>
-                            <li class="wallet-download">
-                                <a href="http://downloaddata.lbtc.io/index.php/s/cSzhvP8xZN78cRj/download" target="_blank">
-                                <a style="cursor:pointer;text-decoration: line-through;">
-                                    <img src="./img/clients/download-black.png" alt="LBTC" style="height:18px">
-                                    Full Node Wallet Data
-                                </a>
-                                <p>Uploading…</p>
-                                <p>920d2feddeb0e51dcfef9321fb681c68</p> 
-                            </li>
-                            <li class="wallet-download" style="border-bottom: none;color:#3c3c3c;">
-                                <p style="color:#3c3c3c;margin: 10px 0 0;">A full copy of Lightning Bitcoin Blockchain</p>
-                                <p style="color:#3c3c3c;"></p>
-                            </li>
-                        </ul>
-                    </div>
+
+                <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.firefoxotc.com/" target="_blank">
+                        <img src="img/ecosystem/firefoxotc.png" class="img-responsive" alt="LBTC">
+                    </a>
                 </div> -->
-                
-            </div>
 
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://yobit.net/en/" target="_blank">
+                        <img src="img/ecosystem/yobit.png" class="img-responsive" alt="LBTC">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.zb.com/" target="_blank">
+                        <img src="img/ecosystem/zb.png" class="img-responsive" alt="LBTC" style="width:100%;">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="http://www.bcex.ca/coins" target="_blank">
+                        <img src="img/ecosystem/bcex.png" class="img-responsive" alt="LBTC">
+                    </a>
+                </div>
+                
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.swft.pro/" target="_blank">
+                        <img src="img/ecosystem/swift.png" class="img-responsive" alt="Lightning Bitcoin">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.exxvip.com/" target="_blank">
+                        <img src="img/ecosystem/exx.png" class="img-responsive" alt="LBTC">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://btc.forkonex.com/" target="_blank">
+                        <img src="img/ecosystem/forkonex.png" class="img-responsive" alt="Lightning Bitcoin">
+                    </a>
+                </div>
+
+                <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://kkex.com/" target="_blank">
+                        <img src="img/ecosystem/kkex.png" class="img-responsive" alt="LBTC">
+                    </a>
+                </div> -->
+
+                <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.58coin.com/" target="_blank">
+                        <img src="img/ecosystem/58coin.png" class="img-responsive" alt="LBTC">
+                    </a>
+                </div> -->
+
+                <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.fubt.top/" target="_blank">
+                        <img src="img/ecosystem/fubt.png" class="img-responsive" alt="Lightning Bitcoin">
+                    </a>
+                </div> -->
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-12 section-heading">
+                    <h3>Wallets</h3>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://cobo.com/" target="_blank">
+                        <img src="img/ecosystem/cobo.png" class="img-responsive" alt="Lightning Bitcoin">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="http://bying.io/" target="_blank">
+                        <img src="img/ecosystem/bying.png" class="img-responsive" alt="Lightning Bitcoin">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="http://bitpie.com/" target="_blank">
+                        <img src="img/ecosystem/bitpie.png" class="img-responsive" alt="Lightning Bitcoin">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://hyperpay.tech/" target="_blank">
+                        <img src="img/ecosystem/hyperpay.png" class="img-responsive" alt="Lightning Bitcoin">
+                    </a>
+                </div>
+
+
+                <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                    <a href="https://www.kcash.com/" target="_blank">
+                        <img src="img/ecosystem/kcash.png" class="img-responsive" alt="Lightning Bitcoin">
+                    </a>
+                </div> -->
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-12 section-heading">
+                    <h3>Explorers</h3>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12 foo">
+                    <a href="https://explorer.lbtc.io/" target="_blank">
+                        <img src="img/ecosystem/mainnet.jpg" class="img-responsive" alt="lbtc">
+                    </a>
+                </div>
+                
+                <div class="col-md-6 col-sm-6 col-xs-12 foo">
+                    <a href="http://test-explorer.lbtc.io/" target="_blank">
+                        <img src="img/ecosystem/testnet.jpg" class="img-responsive" alt="lbtc">
+                    </a>
+                </div>
+                
+                <!-- <div class="col-md-6 col-sm-6 col-xs-12 foo">
+                    <a href="https://lbtcscan.io/" target="_blank">
+                        <img src="img/ecosystem/alpha.jpg" class="img-responsive" alt="lbtc">
+                    </a>
+                </div> -->
+
+            </div>
         </div>
-        <!-- <div class="row pt40 pb40" style="background:#e9e3e31a;margin-right: 0px;margin-left: 0px;">
+    </section>
+    <!-- End ecosystem -->
+
+
+    <!-- Footer One -->
+    <footer id="footer-1">
+
+        <div class="footer-columns">
             <div class="container">
-                <h3><span class="white">Full Node Wallet Installation Guide</span></h3>
-                <a class="wallet-manual" target="_blank" href="http://lbtc.io/download/Full Node Wallet Installation Guide.pdf" download="Full Node Wallet Installation Guide.pdf"><img src="./img/clients/download-white.png" alt="LBTC"> Download</a>
+                <div class="row pt50">
+
+                    <div class="col-md-12 section-heading white">
+                        <h2>Community</h2>
+                        <hr class="separator">
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="https://github.com/lbtcio" target="_blank">
+                            <i class="ion-social-github"></i>
+                            <span>Github</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="http://docs.lbtc.io:8080/" target="_blank">
+                            <i class="ion-information-circled"></i>
+                            <span>Docs</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="https://bitcointalk.org/index.php?topic=2908497" target="_blank">
+                            <i class="ion-social-bitcoin"></i>
+                            <span>Bitcoin Talk</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="https://twitter.com/LightningBTC" target="_blank">
+                            <i class="ion-social-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+
+                    <!-- <div class="col-md-3 col-sm-4 col-xs-6 foo" style="line-height: 5.5;">
+                        <a href="https://medium.com/lightning-bitcoin-blog" target="_blank">
+                            <i class="fa fa-medium"></i>
+                            <span>Medium</span>
+                        </a>
+                    </div> -->
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo" style="line-height: 5.5;">
+                        <div class="item-down">
+                            <i class="fa fa-medium"></i>
+                            <span>Medium<i class="ion-arrow-down-b" style="height: 14px; width: 14px; font-size: 14px; top: -2px; left: 4px;"></i></span>
+                            <div class="contact-item-down" style="top: 50%;left: 40%;">
+                                <a href="https://medium.com/lightning-bitcoin-blog" target="_blank">EN</a>
+                                <a href="https://medium.com/lightning-bitcoin-chinese-blog" target="_blank">CN</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="https://chat.lbtc.io/" target="_blank">
+                            <i class="ion-chatboxes"></i>
+                            <span>Forum</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="http://www.lbtcfans.com/" target="_blank">
+                            <i class="">F.</i>
+                            <span>LBTC Fans</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <div class="item-down">
+                            <i class="ion-paper-airplane"></i>
+                            <span>Telegram<i class="ion-arrow-down-b" style="height: 14px; width: 14px; font-size: 14px; top: -2px; left: 4px;"></i></span>
+                            <div class="contact-item-down" style="top: 70%;left: 40%;">
+                                <a href="https://t.me/LightningBTC" target="_blank">EN</a>
+                                <a href="https://t.me/LightningBTC_CN" target="_blank">CN</a>
+                                <a href="https://t.me/Lightning_Bitcoin_LBTC" target="_blank">RU</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="https://www.instagram.com/lightningbitcoin_official/" target="_blank">
+                            <i class="ion-social-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="https://fb.me/LightningBTC" target="_blank">
+                            <i class="ion-social-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="https://www.reddit.com/r/LightningBTC/" target="_blank">
+                            <i class="ion-social-reddit"></i>
+                            <span>Reddit</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo">
+                        <a href="https://discordapp.com/invite/mSmDvxV" target="_blank">
+                            <i class="">D.</i>
+                            <span>Discord</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo" style="line-height: 5.5;">
+                        <div class="item-down">
+                            <i class="icon fa fa-weixin"></i>
+                            <span>WeChat<i class="ion-arrow-down-b" style="height: 14px; width: 14px; font-size: 14px; top: -2px; left: 4px;"></i></span>
+                            <div class="contact-item-down wxqc" style="width: 100px; height: 100px; right: -40px; top: 0%;">
+                                <img src="./img/wxqc.png" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo" style="line-height: 5.5;">
+                        <a href="https://weibo.com/u/6525553289?refer_flag=1001030101_" target="_blank">
+                            <i class="icon fa fa-weibo"></i>
+                            <span>Weibo</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo" style="line-height: 5.5;">
+                        <a href="https://www.youtube.com/channel/UC_SRDFsRMRwPj8vJblTRHWw/about" target="_blank">
+                            <i class="icon fa fa-youtube-play"></i>
+                            <span>YouTobe</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 foo" style="line-height: 5.5;">
+                        <a href="https://www.chainnode.com/forum-276-1.html" target="_blank">
+                            <i class="icon icon-ChainNode-logo-inking"></i>
+                            <span>ChainNode</span>
+                        </a>
+                    </div>
+
+                </div>
             </div>
-        </div> -->
-    </section>
-    <!-- End Download -->
+        </div>
 
-    
-    <!-- FAQ -->
-    <section id="faq" class="bg-img-9">
-        <div class="container pt40 pb40">
-            <div class="row">
-                
-                <div class="col-sm-8 mr-auto text-center mb20 white">
-                    <h2>
-                        <span class="bold">FAQ</span>
-                    </h2>
-                    <hr class="separator">
-                </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
 
-                <div class="col-sm-1">
-                </div>
-                
-                <div class="col-sm-10">
-                    <div class="panel-group accordian-style2 mb40" id="accordion">
-                        <!-- First Panel -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <button class="panel-title collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false">
-                                    What is Lightning Bitcoin?
-                                </button>
-                            </div>
-                            <div id="collapse5" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    Lightning Bitcoin is a fork of the Bitcoin blockchain. By adopting DPoS consensus mechanism with 2M blocksize, Lightning Bitcoin improves transaction speed, promotes decentralization and also supports smart contracts. Lightning Bitcoin combines the advantages of Bitcoin and Ethereum and creates a more valuable and functional blockchain system.
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Third Panel -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <button class="panel-title collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false">
-                                    Why use DPoS?
-                                </button>
-                            </div>
-                            <div id="collapse7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    LBTC employs the DPoS Consensus Mechanism, which implements digital democracies to offset the negative centralization
-                                    effects posed by the PoW algorithm. As a result, with voting right in the hands of the
-                                    token holders, a true decentralization can be achieved. This ensures maximization of
-                                    shareholders profitability and network efficiency, minimises costs of maintaining cybersecurity
-                                    and operating the network. By significantly reducing the number of participating verification
-                                    nodes, LBTC can reach consensus in seconds and boost the transaction speed to really
-                                    be as FAST as lightning.
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Fourth Panel -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <button class="panel-title collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false">
-                                    How to forge Lightning Bitcoin?
-                                </button>
-                            </div>
-                            <div id="collapse8" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    LBTC holders can vote for bookkeeping nodes, who will be elected and nominated according to weighted votes received.
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-6 col-sm-12">
+                        <p>© 2018
+                            <a href="/"> Lightning Bitcoin </a>All Rights Reserved. </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <ul class="social-icons">
+                            <li>
+                                <a href="/logo.html">
+                                    Press Kit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.lbtc.io/v2/totallbtc" target="_blank">
+                                    Circulation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:support@lightningbitcoin.io">
+                                    <!-- <i class="icon fa fa-envelope"></i> -->
+                                    Support&nbsp;&amp;&nbsp;Service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:james@lightningbitcoin.io">
+                                    <!-- <i class="icon fa fa-envelope-o"></i> -->
+                                    Press&nbsp;&amp;&nbsp;Cooperation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:james@lightningbitcoin.io">
+                                    <!-- <i class="icon fa fa-envelope-o"></i> -->
+                                    Press&nbsp;&amp;&nbsp;Cooperation
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        
-    </section>
-    <!-- End FAQ -->
-    
-    <!-- Call-us -->
-    <section id="call-us" style="background-color: #111;letter-spacing: 1px;">
-        <div class="container pt40 pb40">
-            <!-- <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6" style="margin-top:10px;margin-bottom:10px">
-                    <a href="https://twitter.com/LightningBTC" target="_blank" class="call-us">
-                        <span>
-                            <img style="" src="img/clients/tw-01.png" alt="lbtc">
-                        </span>
-                        Twitter
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6" style="margin-top:10px;margin-bottom:10px">
-                    <a href="https://t.me/LightningBTC" target="_blank" class="call-us">
-                        <span>
-                            <img style="" src="img/clients/tele-01.png" alt="lbtc">
-                        </span>
-                        Telegram
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6" style="margin-top:10px;margin-bottom:10px">
-                    <a href="mailto:support@lightningbitcoin.io" target="_blank" class="call-us">
-                        <span>
-                            <img style="" src="img/clients/support-01.png" alt="lbtc">
-                        </span>
-                        Support&nbsp;&amp;&nbsp;Service
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6" style="margin-top:10px;margin-bottom:10px">
-                    <a href="mailto:icey@lightningbitcoin.io" target="_blank" class="call-us">
-                        <span>
-                            <img style="" src="img/clients/press-01.png" alt="lbtc">
-                        </span>
-                        Press&nbsp;&amp;&nbsp;Cooperation
-                    </a>
-                </div>
-            </div> -->
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="links-item">
-                        <h3>
-                            Code
-                        </h3>
-                        <p>
-                            <a href="https://github.com/lbtcio" target="_blank" class="call-us">
-                                <i class="ion-social-github"></i>
-                                GitHub
-                            </a>
-                        </p>
 
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="links-item">
-                        <h3>
-                            Community
-                        </h3>
-                        <p><a href="http://chat.lbtc.io/" target="_blank" class="call-us">Forum</a></p>
-                        <p><a href="http://www.lbtcfans.com/" target="_blank" class="call-us">LBTC FANS</a></p>
+    </footer>
+    <!-- End Footer One -->
 
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="links-item">
-                        <h3>
-                            Media
-                        </h3>
-                        <p>
-                            <a href="https://twitter.com/LightningBTC" target="_blank" class="call-us">
-                                <!-- <span>
-                                    <img style="" src="img/clients/tw-01.png" alt="lbtc">
-                                </span> -->
-                                Twitter
-                            </a>
-                        </p>
-                        <p>
-                            <a href="https://t.me/LightningBTC" target="_blank" class="call-us">
-                                <!-- <span>
-                                    <img style="" src="img/clients/tele-01.png" alt="lbtc">
-                                </span> -->
-                                Telegram
-                            </a>
-                        </p>
-                        <p>
-                            <a href="https://medium.com/lightning-bitcoin-blog" target="_blank" class="call-us">
-                                Medium
-                            </a>
-                        </p>
-                        <p>
-                            <a href="https://discord.gg/mSmDvxV" target="_blank" class="call-us">
-                                Discord
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="links-item">
-                        <h3>
-                            Support
-                        </h3>
-                        <p>
-                            <a href="mailto:support@lightningbitcoin.io" target="_blank" class="call-us">
-                                <span>
-                                    <img style="" src="img/clients/support-01.png" alt="lbtc">
-                                </span>
-                                Support&nbsp;&amp;&nbsp;Service
-                            </a>
-                        </p>
-                        <p>
-                            <a href="mailto:icey@lightningbitcoin.io" target="_blank" class="call-us">
-                                <span>
-                                    <img style="" src="img/clients/press-01.png" alt="lbtc">
-                                </span>
-                                Press&nbsp;&amp;&nbsp;Cooperation
-                            </a>
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12" style="text-align:right;">
-                    <p style="color:#ddd">© 2018 Lightning Bitcoin All Rights Reserved. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Call-us -->
 
     <!-- Start Back To Top -->
     <a id="back-to-top">
@@ -1059,15 +1005,8 @@
     </a>
     <!-- End Back To Top -->
 
+
     <!-- Scripts -->
-    <script type="text/javascript">
-        if (self == top) {
-            var theBody = document.getElementsByTagName('body')[0];
-            theBody.style.display = "block";
-        } else {
-            top.location = self.location;
-        }
-    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>

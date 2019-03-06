@@ -130,7 +130,10 @@ blockquote {
     background-color: rgba(12,180,206,0.9)
 }
 
- 
 .progress-svg circle {
   	stroke: #0cb4ce
+}
+
+#footer-1 .foo a:hover .icon::before {
+	color: #0cb4ce;
 }

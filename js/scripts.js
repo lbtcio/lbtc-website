@@ -66,27 +66,63 @@
         gallery: { enabled: true },
         mainClass: 'my-mfp-slide-bottom'
     });
+    $('.popup-youtube,.popup-vimeo,.popup-gmaps,.popup-video').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
 
+    // Search Modal
+    
+    $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+    });
+    
+    $('.search').click(function () {
+        setTimeout(function timeoutFunction() {
+            $('#search-modal-input').focus();
+        }, 100);
+    });
      
     // Smooth Scroll to Anchor
     
-    $('body').on('click', "scroll-btn,.btn-scroll,ul.navbar-nav li a", function (event) { 
+    $('body').on('click', "scroll-btn,.btn-scroll", function (event) { 
         var $anchor = $(this);
         if ($(window).width() > 992) {
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 53
-            }, 1000, 'easeInQuint');
+            }, 1000, 'easeInOutExpo');
             event.preventDefault();
         } else {
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top + 5
-            }, 1000, 'easeInQuint');
+            }, 1000, 'easeInOutExpo');
             event.preventDefault();
         }
     });
 
     // Owl Sliders
     
+    $(".hero-slider").owlCarousel({
+        autoplay: true,
+        items: 1,
+        dots: false,
+        nav: true,
+        rewindNav: true,
+        loop: true,
+        navText: ["<img src='img/assets/slider-left-thin-arrow.png'>", "<img src='img/assets/slider-right-thin-arrow.png'>"]
+    });
     
     $(".content-slider").owlCarousel({
         animateOut: 'bounceOut',
@@ -97,7 +133,7 @@
         dots: false,
         mouseDrag: false,
         touchDrag: false,
-        loop: false
+        loop: true
     });
     
     $(".team-slider").owlCarousel({
