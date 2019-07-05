@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://lbtc.io/sitemap.xml

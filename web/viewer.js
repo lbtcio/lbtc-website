@@ -5125,7 +5125,8 @@ var defaultOptions = {
     kind: OptionKind.VIEWER
   },
   defaultUrl: {
-    value: '闪电比特币（Lightning Bitcoin）白皮书.pdf',
+    // value: '闪电比特币（Lightning Bitcoin）白皮书.pdf',
+    value: defaultPDFUrl,
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {

@@ -662,5 +662,21 @@
         displayType: 'sequentially',
         displayTypeSpeed: 100
     });
+
+    $('#openVide').click( function (event) {
+        if (!$('#lbtcVideo')[0].src) {
+            $('#lbtcVideo')[0].src = './video/ins_en.mp4'
+        }
+        $('html').css('overflow','hidden');
+        $('#mask').show();
+        $('.lbtcVideo-container').show();
+    })
+
+    $('#mask, .lbtcVideo-container .mfp-close').click( function (event) {
+        $('#mask').hide();
+        $('.lbtcVideo-container').hide();
+        $('#lbtcVideo')[0].pause();
+        $('html').css('overflow','auto');
+    })
     
 }(jQuery));

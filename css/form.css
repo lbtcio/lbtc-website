@@ -1,0 +1,38 @@
+.bounty input,
+.bounty select,
+.bounty textarea {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0 0 5px 0;
+  /* padding: 16px 8px; */
+  border: 1px solid #ccc;
+}
+.form-group {
+  margin: 0 0 20px 0;
+}
+.bounty label {
+  font-weight: normal; 
+}
+.bounty .btn-primary {
+  border-width: 1px;
+  font-size: 14px;
+}
+.bounty .btn-primary:hover {
+  background-color: #fff;
+  border-color: #191a1c;
+  color: #191a1c;
+}
+.alert {
+  z-index: 10000;
+  position: fixed;
+  top: 55px;
+  right: 0;
+  left: 0;
+}
+
+.datetimepicker {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}

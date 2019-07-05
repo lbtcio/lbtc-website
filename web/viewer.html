@@ -29,16 +29,35 @@ See https://github.com/adobe-type-tools/cmap-resources
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>LBTC White Paper</title>
 
-
   <link rel="stylesheet" href="viewer.css">
-
-
   <!-- This snippet is used in production (included from viewer.html) -->
   <link rel="resource" type="application/l10n" href="locale/locale.properties">
   <script src="../build/pdf.js"></script>
+  <script>
 
+    var defaultPDFUrl = '闪电比特币（Lightning Bitcoin）白皮书.pdf';
+    let href = location.href;
+    let paramsStr = href.substr(href.indexOf("?") + 1);
 
+    if (paramsStr.indexOf('en') > 0) {
+      defaultPDFUrl = 'Lightning_Bitcoin_Whitepaper.pdf';
+    } else {
+      defaultPDFUrl = '闪电比特币（Lightning Bitcoin）白皮书.pdf';
+    }
+
+    console.log(paramsStr);
+    console.log(defaultPDFUrl);
+  </script>
   <script src="viewer.js"></script>
+  <script>
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d11f8718d2ff01eb6ef3d3727afb08f1";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+      })();
+  </script>
 
 </head>
 
