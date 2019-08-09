@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <title>MyLBTC Download</title>
+  <style>
+    .mobileView {
+      max-width: 500px;
+      position: relative;
+      height: 100vh;
+    }
+    .t {
+      margin-bottom: 15px;
+    }
+    img {
+      width: 100%;
+    }
+    .a {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .b {
+      z-index: 1000;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .b img {
+      width: 300px;
+      margin: 5px auto;
+    }
+    @media screen and (min-width:1200px) {}
+    @media screen and (min-width:992px) {}
+    @media screen and (min-width:768px) {}
+    @media screen and (min-width:480px) {}
+  </style>
+</head>
+
+<body>
+  <div class="container mobileView" style="display: none;">
+    <div class="t">
+      <img src="https://lbtc.io/img/m-download/m-download1.png" alt="">
+    </div>
+    <div class="a">
+      <a href="https://lbtc.io/download/MyLBTC-v1.0.4-20190625.apk">
+        <img src="https://lbtc.io/img/m-download/m-download2.png" alt="">
+      </a>
+      <p>v1.0.4</p>
+      <p>注：更新之前务必备份钱包</p>
+      <p>暂不适用安卓7.0以下版本以及魅族手机</p>
+    </div>
+    <div class="b">
+      <img src="https://lbtc.io/img/m-download/m-download3.png" alt="">
+    </div>
+  </div>
+  <div class="mask"></div>
+</body>
+<script src="https://lbtc.io/js/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){    // iOS
+      window.location.href="https://zc.pgyer.com/Nf3i";
+    } else {                                                    // Android
+      $('.mobileView').show();
+      if(/MicroMessenger/i.test(navigator.userAgent)){          // Wx
+              
+        var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+        var weixinTip = $('<div id="weixinTip"><p><img src="https://lbtc.io/img/m-download/live_weixin.png" alt="微信打开"/></p></div>');
+  
+        $("body").append(weixinTip);
+  
+        $("#weixinTip").css({
+            "position": "fixed",
+            "left": "0",
+            "top": "0",
+            "height": winHeight,
+            "width": "100%",
+            "z-index": "1000",
+            "background-color": "rgba(0,0,0,0.8)",
+            "filter": "alpha(opacity=80)",
+        });
+        $("#weixinTip p").css({
+            "text-align": "right",
+            "margin-top": "10%",
+            "padding-left": "5%",
+            "padding-right": "5%"
+        });
+        $("#weixinTip p img").css({
+            "max-width": "70%",
+            "height": "auto"
+        });
+
+      }
+      if (is_weixin) {
+        
+      }
+    }
+  })
+</script>
+
+</html>

@@ -604,34 +604,34 @@
     });
     
     // Blog Masonry Fullwidth
-    $('#blog-grid,#js-gallery-5').cubeportfolio({
-        filters: '#js-filters',
-        layoutMode: 'grid',
-        sortToPreventGaps: true,
-        mediaQueries: [{
-            width: 1500,
-            cols: 5
-        }, {
-            width: 1100,
-            cols: 4
-        }, {
-            width: 800,
-            cols: 2
-        }, {
-            width: 480,
-            cols: 2
-        }, {
-            width: 320,
-            cols: 1
-        }],
-        defaultFilter: '*',
-        animationType: 'sequentially',
-        gapHorizontal: 15,
-        gapVertical: 15,
-        caption: 'zoom',
-        displayType: 'sequentially',
-        displayTypeSpeed: 100
-    });
+    // $('#blog-grid,#js-gallery-5').cubeportfolio({
+    //     filters: '#js-filters',
+    //     layoutMode: 'grid',
+    //     sortToPreventGaps: true,
+    //     mediaQueries: [{
+    //         width: 1500,
+    //         cols: 5
+    //     }, {
+    //         width: 1100,
+    //         cols: 4
+    //     }, {
+    //         width: 800,
+    //         cols: 2
+    //     }, {
+    //         width: 480,
+    //         cols: 2
+    //     }, {
+    //         width: 320,
+    //         cols: 1
+    //     }],
+    //     defaultFilter: '*',
+    //     animationType: 'sequentially',
+    //     gapHorizontal: 15,
+    //     gapVertical: 15,
+    //     caption: 'zoom',
+    //     displayType: 'sequentially',
+    //     displayTypeSpeed: 100
+    // });
     
     // Shop
     $('#shop-grid').cubeportfolio({
