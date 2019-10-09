@@ -1,12 +1,13 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?794u8o');
-  src:  url('fonts/icomoon.eot?794u8o#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?794u8o') format('truetype'),
-    url('fonts/icomoon.woff?794u8o') format('woff'),
-    url('fonts/icomoon.svg?794u8o#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6nzp6r');
+  src:  url('fonts/icomoon.eot?6nzp6r#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6nzp6r') format('truetype'),
+    url('fonts/icomoon.woff?6nzp6r') format('woff'),
+    url('fonts/icomoon.svg?6nzp6r#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -18,16 +19,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  
-  /* Enable Ligatures ================ */
-  letter-spacing: 0;
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga" 1;
-  font-feature-settings: "liga";
-  -webkit-font-variant-ligatures: discretionary-ligatures;
-  font-variant-ligatures: discretionary-ligatures;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -36,9 +27,10 @@
 
 .icon-wiki-58:before {
   content: "\e900";
-  color: #bbb;
 }
 .icon-ChainNode-logo:before {
   content: "\e901";
-  color: #bbb;
+}
+.icon-LBTC-home-hui-65:before {
+  content: "\e902";
 }
