@@ -1,7 +1,3 @@
-# The official Lightning Bitcoin website 
-
-
-# Please check it 
-
+# The official LBTC website 
 
 - [https://lbtc.io](https://lbtc.io)
