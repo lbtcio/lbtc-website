@@ -1,256 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="快如闪电,迭代进化,链上治理,去中心化,加密货币,DPOS,闪电比特币,LBTC">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="快如闪电,迭代进化,链上治理,去中心化,加密货币,DPOS,闪电比特币,LBTC"
+    />
     <meta name="description" content="" />
     <title>Explorer</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link href="../img/assets/favicon.ico" rel="icon" type="image/png">
-    <link href="../css/plugins.css" rel="stylesheet" type="text/css">
-    <link href="../css/theme.css" rel="stylesheet" type="text/css">
-    <link href="../css/ionicons.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/et-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="../css/themify-icons.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/custom.css" rel="stylesheet" type="text/css">
-    <link href="../css/colors/blue.css" id="color-scheme" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/form.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/bootstrapValidator.css">
-    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link href="../img/assets/favicon.ico" rel="icon" type="image/png" />
+    <link href="../css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="../css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/et-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="../css/themify-icons.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../css/custom.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../css/colors/blue.css"
+      id="color-scheme"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/form.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../css/bootstrapValidator.css" />
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css" />
     <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?d11f8718d2ff01eb6ef3d3727afb08f1";
-            var s = document.getElementsByTagName("script")[0]; 
-            s.parentNode.insertBefore(hm, s);
-        })();
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d11f8718d2ff01eb6ef3d3727afb08f1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
     <style>
-        ul {
-            list-style: disc;
-        }
+      ul {
+        list-style: disc;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar navbar-default fullwidth">
-        <div class="container">
-
-            <div class="navbar-header">
-                <div class="container">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar top-bar"></span>
-                        <span class="icon-bar middle-bar"></span>
-                        <span class="icon-bar bottom-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/logo-w-t-light.png" class="logo-dark" alt="LBTC">
-                    </a>
-                </div>
-            </div>
-
-            <div id="navbar" class="navbar-collapse collapse">
-                <div class="container">
-                    <ul class="nav navbar-nav menu-right">
-
-                        <li class="megamenu">
-                            <a href="../index.html" class="btn-scroll">Home</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="../developer.html" class="btn-scroll">Developer</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="../team.html" class="btn-scroll">Team</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="../index.html#download" class="btn-scroll">Download</a>
-                        </li>
-
-                        <li class="dropdown"><a class="dropdown-toggle">Explorers<i class="ti-angle-down"></i></a> 
-                            <ul class="dropdown-menu">
-                                <li><a rel="nofollow" href="https://explorer.lbtc.io/" target=_blank>Mainnet Explorer</a></li>
-                                <li><a rel="nofollow" href="http://test-explorer.lbtc.io/" target=_blank>Testnet Explorer</a></li> 
-                            </ul>
-                        </li>  
-
-                        <li class="megamenu">
-                            <a rel="nofollow" href="https://chat.lbtc.io/topic/37-faq/" class="btn-scroll" target=_blank>FAQ</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="../index.html#footer-1" class="btn-scroll">Community</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>
+      <div class="container">
+        <div class="navbar-header">
+          <div class="container">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img
+                src="../img/logo-w-t-light.png"
+                class="logo-dark"
+                alt="LBTC"
+              />
+            </a>
+          </div>
         </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="container">
+            <ul class="nav navbar-nav menu-right">
+              <li class="megamenu">
+                <a href="../index.html" class="btn-scroll">Home</a>
+              </li>
+
+              <li class="megamenu">
+                <a href="../developer.html" class="btn-scroll">Developer</a>
+              </li>
+
+              <li class="megamenu">
+                <a href="../team.html" class="btn-scroll">Team</a>
+              </li>
+
+              <li class="megamenu">
+                <a href="../index.html#download" class="btn-scroll">Download</a>
+              </li>
+
+              <li class="dropdown">
+                <a class="dropdown-toggle"
+                  >Explorers<i class="ti-angle-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://explorer.lbtc.io/"
+                      target="_blank"
+                      >Mainnet Explorer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="http://test-explorer.lbtc.io/"
+                      target="_blank"
+                      >Testnet Explorer</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="megamenu">
+                            <a rel="nofollow" href="https://chat.lbtc.io/topic/37-faq/" class="btn-scroll" target=_blank>FAQ</a>
+                        </li> -->
+
+              <li class="megamenu">
+                <a href="../index.html#footer-1" class="btn-scroll"
+                  >Community</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 
-
     <section class="developer pt100 pb90">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-9 col-lg-offset-1 pb30" style="border-bottom: 1px solid #eee;">
-                    <div class="de-title mb30">
-                        <h3>Explorer optimization</h3>
-                    </div>
-                    <div class="content">
-                        <p><strong>Refereence Links:</strong></p>
-                        <ul>
-                            <li><a rel="nofollow" href="http://lbtc.io/" target="_blank">http://lbtc.io/</a></li>
-                            <li><a rel="nofollow" href="https://explorer.lbtc.io/" target="_blank">https://explorer.lbtc.io/</a></li>
-                            <li><a rel="nofollow" href="https://github.com/lbtcio/lbtc-website/" target="_blank">https://github.com/lbtcio/lbtc-website</a></li>
-                            <li><a rel="nofollow" href="https://github.com/lbtcio/lbtc-explorer/" target="_blank">https://github.com/lbtcio/lbtc-explorer/</a></li>
-                        </ul>
-
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-9 col-lg-offset-1 pb30"
+            style="border-bottom: 1px solid #eee"
+          >
+            <div class="de-title mb30">
+              <h3>Explorer optimization</h3>
             </div>
-
-            <div class="row pt30">
-                <div class="col-md-10 bounty">
-                    <div id="message"></div>
-
-                    <form id="submitForm" class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Full Name</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control" name="name" placeholder="" />
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Email Address</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control" name="email" />
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Date</label>
-                            <div class="col-lg-3 mb5">
-                                <div class="input-group date" id="startDate">
-                                    <input type="text" class="form-control" name="start" placeholder="YYYY-MM-DD" readonly="readonly"/>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="input-group date" id="endDate">
-                                    <input type="text" class="form-control" name="end" placeholder="YYYY-MM-DD" readonly="readonly"/>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Point</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control" name="point" />
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Plan</label>
-                            <div class="col-lg-6">
-                                <textarea class="form-control" name="plan" rows="5"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-lg-3 col-sm-3 col-xs-4 control-label">
-                                <img id="code" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAYCAIAAACDYM+5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABISURBVFhH7dAxAQAwEAOh+rcVY7Xwt4ME3jiTFcgKZAWyAlmBrEBWICuQFcgKZAWyAlmBrEBWICuQFcgKZAWyAlmBrEDW2fYB7cJtnPXgYPQAAAAASUVORK5CYII=" alt="Verification code" style="margin-right: 4px;">
-                            </div>
-                            <div class="col-lg-2 col-sm-3 col-xs-4">
-                                <input id="num" type="text" class="form-control" name="code" />
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-lg-9 col-lg-offset-3">
-                                <button type="submit" id="send" class="btn btn-primary" name="submit" data-loading-text="Submit..." >Submit</button>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
+            <div class="content">
+              <p><strong>Refereence Links:</strong></p>
+              <ul>
+                <li>
+                  <a rel="nofollow" href="http://lbtc.io/" target="_blank"
+                    >http://lbtc.io/</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="nofollow"
+                    href="https://explorer.lbtc.io/"
+                    target="_blank"
+                    >https://explorer.lbtc.io/</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="nofollow"
+                    href="https://github.com/lbtcio/lbtc-website/"
+                    target="_blank"
+                    >https://github.com/lbtcio/lbtc-website</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="nofollow"
+                    href="https://github.com/lbtcio/lbtc-explorer/"
+                    target="_blank"
+                    >https://github.com/lbtcio/lbtc-explorer/</a
+                  >
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+
+        <div class="row pt30">
+          <div class="col-md-10 bounty">
+            <div id="message"></div>
+
+            <form id="submitForm" class="form-horizontal">
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Full Name</label>
+                <div class="col-lg-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Email Address</label>
+                <div class="col-lg-6">
+                  <input type="text" class="form-control" name="email" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Date</label>
+                <div class="col-lg-3 mb5">
+                  <div class="input-group date" id="startDate">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="start"
+                      placeholder="YYYY-MM-DD"
+                      readonly="readonly"
+                    />
+                    <span class="input-group-addon"
+                      ><span class="glyphicon glyphicon-calendar"></span
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="input-group date" id="endDate">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="end"
+                      placeholder="YYYY-MM-DD"
+                      readonly="readonly"
+                    />
+                    <span class="input-group-addon"
+                      ><span class="glyphicon glyphicon-calendar"></span
+                    ></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Point</label>
+                <div class="col-lg-6">
+                  <input type="text" class="form-control" name="point" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Plan</label>
+                <div class="col-lg-6">
+                  <textarea
+                    class="form-control"
+                    name="plan"
+                    rows="5"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-lg-3 col-sm-3 col-xs-4 control-label">
+                  <img
+                    id="code"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAYCAIAAACDYM+5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABISURBVFhH7dAxAQAwEAOh+rcVY7Xwt4ME3jiTFcgKZAWyAlmBrEBWICuQFcgKZAWyAlmBrEBWICuQFcgKZAWyAlmBrEDW2fYB7cJtnPXgYPQAAAAASUVORK5CYII="
+                    alt="Verification code"
+                    style="margin-right: 4px"
+                  />
+                </div>
+                <div class="col-lg-2 col-sm-3 col-xs-4">
+                  <input
+                    id="num"
+                    type="text"
+                    class="form-control"
+                    name="code"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-lg-9 col-lg-offset-3">
+                  <button
+                    type="submit"
+                    id="send"
+                    class="btn btn-primary"
+                    name="submit"
+                    data-loading-text="Submit..."
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div id="successAlert" class="alert alert-success" style="display: none">
-        <a href="#" class="close" data-dismiss="alert">
-            &times;
-        </a>
-        <strong>Success！</strong><div id="successAlertMsg"></div>
+      <a href="#" class="close" data-dismiss="alert"> &times; </a>
+      <strong>Success！</strong>
+      <div id="successAlertMsg"></div>
     </div>
     <div id="warnAlert" class="alert alert-danger" style="display: none">
-        <a href="#" class="close" data-dismiss="alert">
-            &times;
-        </a>
-        <strong>Warn！</strong><div id="warnAlertMsg"></div>
+      <a href="#" class="close" data-dismiss="alert"> &times; </a>
+      <strong>Warn！</strong>
+      <div id="warnAlertMsg"></div>
     </div>
-
 
     <!-- Footer One -->
     <footer id="footer-1">
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6 col-sm-12">
-                        <p>© 2019
-                            <a href="/"> Lightning Bitcoin </a>All Rights Reserved. </p>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <ul class="social-icons">
-                            <li>
-                                <a href="">
-                                    Press Kit
-                                </a>
-                            </li>
-                            <li>
-                                <a rel="nofollow" href="http://api.lbtc.io/totallbtc" target="_blank">
-                                    Circulation
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:support@lightningbitcoin.io">
-                                    <!-- <i class="icon fa fa-envelope"></i> -->
-                                    Support&nbsp;&amp;&nbsp;Service
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:icey@lightningbitcoin.io">
-                                    <!-- <i class="icon fa fa-envelope-o"></i> -->
-                                    Press&nbsp;&amp;&nbsp;Cooperation
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p>
+                © 2021 <a href="/"> Lightning Bitcoin </a>All Rights Reserved.
+              </p>
             </div>
+            <div class="col-md-6 col-sm-12">
+              <ul class="social-icons">
+                <li>
+                  <a href=""> Press Kit </a>
+                </li>
+                <li>
+                  <a
+                    rel="nofollow"
+                    href="http://api.lbtc.io/totallbtc"
+                    target="_blank"
+                  >
+                    Circulation
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:support@lightningbitcoin.io">
+                    <!-- <i class="icon fa fa-envelope"></i> -->
+                    Support&nbsp;&amp;&nbsp;Service
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:icey@lightningbitcoin.io">
+                    <!-- <i class="icon fa fa-envelope-o"></i> -->
+                    Press&nbsp;&amp;&nbsp;Cooperation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- End Footer One -->
 
     <!-- Start Back To Top -->
     <a id="back-to-top">
-        <i class="icon ion-chevron-up"></i>
+      <i class="icon ion-chevron-up"></i>
     </a>
     <!-- End Back To Top -->
 
@@ -268,112 +380,109 @@
     <script src="../js/form.js"></script>
 
     <script>
-        $(document).ready(function () {
-
-            $('#submitForm').bootstrapValidator({
-                message: 'This value is not valid',
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    name: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The Name is required and cannot be empty'
-                            }
-                        }
-                    },
-                    email: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The email is required and cannot be empty'
-                            },
-                            emailAddress: {
-                                message: 'The input is not a valid email address'
-                            }
-                        }
-                    },
-                    start: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The Start date is required and cannot be empty'
-                            },
-                            date: {
-                                format: 'YYYY-MM-DD',
-                                message: 'The Start date is not valid'
-                            }
-                        }
-                    },
-                    end: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The End date is required and cannot be empty'
-                            },
-                            date: {
-                                format: 'YYYY-MM-DD',
-                                message: 'The End date is not valid'
-                            }
-                        }
-                    },
-                    point: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The point is required and cannot be empty'
-                            }
-                        }
-                    },
-                    plan: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The plan is required and cannot be empty'
-                            }
-                        }
-                    }
-                    // code: {
-                    //     validators: {
-                    //         notEmpty: {
-                    //             message: 'The Verification code is required and cannot be empty'
-                    //         },
-                    //         digits: {
-                    //             message: 'The Verification code can only be a number'
-                    //         }
-                    //     }
-                    // }
+      $(document).ready(function () {
+        $("#submitForm")
+          .bootstrapValidator({
+            message: "This value is not valid",
+            feedbackIcons: {
+              valid: "glyphicon glyphicon-ok",
+              invalid: "glyphicon glyphicon-remove",
+              validating: "glyphicon glyphicon-refresh"
+            },
+            fields: {
+              name: {
+                validators: {
+                  notEmpty: {
+                    message: "The Name is required and cannot be empty"
+                  }
                 }
-            })
-            .on('success.form.bv', function (e) {
-                e.preventDefault;
-                $('#send').button('loading');
-                var $form = $(e.target);
-                var bv = $form.data('bootstrapValidator');
-                var d = $('#submitForm').serializeArray();
-                var num = $('#num').val();
-                var uid = $('#code').attr('data-uid');
-                var p = {
-                    num: num,
-                    uid: uid,
-                    flag: 2
-                };
-                $.each(d, function () {
-                    if (this.name != 'captcha') {
-                        p[this.name] = this.value;
-                    }
-                });
-                $('#send').button('reset');
-
-                sendForm(p, 'proopt');
-            })
-
-            // Validate the form manually
-            $('#send').click(function() {
-                $('#submitForm').bootstrapValidator('validate');
+              },
+              email: {
+                validators: {
+                  notEmpty: {
+                    message: "The email is required and cannot be empty"
+                  },
+                  emailAddress: {
+                    message: "The input is not a valid email address"
+                  }
+                }
+              },
+              start: {
+                validators: {
+                  notEmpty: {
+                    message: "The Start date is required and cannot be empty"
+                  },
+                  date: {
+                    format: "YYYY-MM-DD",
+                    message: "The Start date is not valid"
+                  }
+                }
+              },
+              end: {
+                validators: {
+                  notEmpty: {
+                    message: "The End date is required and cannot be empty"
+                  },
+                  date: {
+                    format: "YYYY-MM-DD",
+                    message: "The End date is not valid"
+                  }
+                }
+              },
+              point: {
+                validators: {
+                  notEmpty: {
+                    message: "The point is required and cannot be empty"
+                  }
+                }
+              },
+              plan: {
+                validators: {
+                  notEmpty: {
+                    message: "The plan is required and cannot be empty"
+                  }
+                }
+              }
+              // code: {
+              //     validators: {
+              //         notEmpty: {
+              //             message: 'The Verification code is required and cannot be empty'
+              //         },
+              //         digits: {
+              //             message: 'The Verification code can only be a number'
+              //         }
+              //     }
+              // }
+            }
+          })
+          .on("success.form.bv", function (e) {
+            e.preventDefault;
+            $("#send").button("loading");
+            var $form = $(e.target);
+            var bv = $form.data("bootstrapValidator");
+            var d = $("#submitForm").serializeArray();
+            var num = $("#num").val();
+            var uid = $("#code").attr("data-uid");
+            var p = {
+              num: num,
+              uid: uid,
+              flag: 2
+            };
+            $.each(d, function () {
+              if (this.name != "captcha") {
+                p[this.name] = this.value;
+              }
             });
-        })
+            $("#send").button("reset");
 
+            sendForm(p, "proopt");
+          });
+
+        // Validate the form manually
+        $("#send").click(function () {
+          $("#submitForm").bootstrapValidator("validate");
+        });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

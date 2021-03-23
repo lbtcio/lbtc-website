@@ -1,348 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="快如闪电,迭代进化,链上治理,去中心化,加密货币,DPOS,闪电比特币,LBTC">
-    <meta name="description" content="Description: Lightning Bitcoin (LBTC) is a peer-to-peer electronic cash system. It is an innovative experiment based on Bitcoin, and its on-chain governance system enables and separates the rights of voting and block generation. LBTC is an instant, secure, scalable and nearly free Internet-of-Value protocol for global payments. Mining rigs are no longer required for users to participate due to LBTC's UTXO-based DPoS consensus mechanism, which enables full decentralization." />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="快如闪电,迭代进化,链上治理,去中心化,加密货币,DPOS,闪电比特币,LBTC"
+    />
+    <meta
+      name="description"
+      content="Description: Lightning Bitcoin (LBTC) is a peer-to-peer electronic cash system. It is an innovative experiment based on Bitcoin, and its on-chain governance system enables and separates the rights of voting and block generation. LBTC is an instant, secure, scalable and nearly free Internet-of-Value protocol for global payments. Mining rigs are no longer required for users to participate due to LBTC's UTXO-based DPoS consensus mechanism, which enables full decentralization."
+    />
     <title>Developer</title>
-    <link href="../img/assets/favicon.ico" rel="icon" type="image/png">
-    <link href="../css/plugins.css" rel="stylesheet" type="text/css">
-    <link href="../css/theme.css" rel="stylesheet" type="text/css">
-    <link href="../css/ionicons.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/et-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="../css/themify-icons.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/custom.css" rel="stylesheet" type="text/css">
-    <link href="../css/colors/blue.css" id="color-scheme" rel="stylesheet" type="text/css">
+    <link href="../img/assets/favicon.ico" rel="icon" type="image/png" />
+    <link href="../css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="../css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/et-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="../css/themify-icons.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../css/custom.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../css/colors/blue.css"
+      id="color-scheme"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?d11f8718d2ff01eb6ef3d3727afb08f1";
-            var s = document.getElementsByTagName("script")[0]; 
-            s.parentNode.insertBefore(hm, s);
-        })();
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d11f8718d2ff01eb6ef3d3727afb08f1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Start Header -->
     <nav class="navbar navbar-default fullwidth transparent">
-        <div class="container">
-
-            <div class="navbar-header">
-                <div class="container">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                        aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar top-bar"></span>
-                        <span class="icon-bar middle-bar"></span>
-                        <span class="icon-bar bottom-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="./index.html">
-                        <!-- <img src="../img/assets/logo-light.png" class="logo-light" alt="LBTC"> -->
-                        <img src="../img/logo-w-t-light.png" class="logo-dark" alt="LBTC">
-                    </a>
-                </div>
-            </div>
-
-            <div id="navbar" class="navbar-collapse collapse">
-                <div class="container">
-                    <ul class="nav navbar-nav menu-right">
-
-                        <li class="megamenu">
-                            <a href="./index.html" class="btn-scroll">Home</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="./news.html" class="btn-scroll">News</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="" class="btn-scroll">Developer</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="./team.html" class="btn-scroll">Team</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="./index.html#download" class="btn-scroll">Download</a>
-                        </li>
-
-                        <li class="dropdown"><a class="dropdown-toggle">Explorers<i class="ti-angle-down"></i></a> 
-                            <ul class="dropdown-menu">
-                                <li><a rel="nofollow" href="https://explorer.lbtc.io/" target=_blank>Mainnet Explorer</a></li>
-                                <li><a rel="nofollow" href="http://test-explorer.lbtc.io/" target=_blank>Testnet Explorer</a></li> 
-                            </ul>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="./index.html#footer-1" class="btn-scroll">Community</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a rel="nofollow" href="https://chat.lbtc.io/topic/37-faq/" class="btn-scroll" target=_blank>FAQ</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="./about.html" class="btn-scroll">About</a>
-                        </li>
-
-                        <li class="nav-separator"></li>
-
-                        <li class="megamenu">
-                            <a href="../developer.html">
-                                <img src="../img/lang/zh.png" alt="zh-CN">
-                            </a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="">
-                                <img src="../img/lang/en.png" alt="EN">
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>
-
+      <div class="container">
+        <div class="navbar-header">
+          <div class="container">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">
+              <!-- <img src="../img/assets/logo-light.png" class="logo-light" alt="LBTC"> -->
+              <img
+                src="../img/logo-w-t-light.png"
+                class="logo-dark"
+                alt="LBTC"
+              />
+            </a>
+          </div>
         </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="container">
+            <ul class="nav navbar-nav menu-right">
+              <li class="megamenu">
+                <a href="./index.html" class="btn-scroll">Home</a>
+              </li>
+
+              <!-- <li class="megamenu">
+                            <a href="./news.html" class="btn-scroll">News</a>
+                        </li> -->
+
+              <li class="megamenu">
+                <a href="" class="btn-scroll">Developer</a>
+              </li>
+
+              <li class="megamenu">
+                <a href="./team.html" class="btn-scroll">Team</a>
+              </li>
+
+              <li class="megamenu">
+                <a href="./index.html#download" class="btn-scroll">Download</a>
+              </li>
+
+              <li class="dropdown">
+                <a class="dropdown-toggle"
+                  >Explorers<i class="ti-angle-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://explorer.lbtc.io/"
+                      target="_blank"
+                      >Mainnet Explorer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="http://test-explorer.lbtc.io/"
+                      target="_blank"
+                      >Testnet Explorer</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="megamenu">
+                <a href="./index.html#footer-1" class="btn-scroll">Community</a>
+              </li>
+
+              <!-- <li class="megamenu">
+                <a
+                  rel="nofollow"
+                  href="https://chat.lbtc.io/topic/37-faq/"
+                  class="btn-scroll"
+                  target="_blank"
+                  >FAQ</a
+                >
+              </li> -->
+
+              <li class="megamenu">
+                <a href="./about.html" class="btn-scroll">About</a>
+              </li>
+
+              <li class="nav-separator"></li>
+
+              <li class="megamenu">
+                <a href="../developer.html">
+                  <img src="../img/lang/zh.png" alt="zh-CN" />
+                </a>
+              </li>
+
+              <li class="megamenu">
+                <a href="">
+                  <img src="../img/lang/en.png" alt="EN" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- End Header -->
 
     <!-- Page Hero -->
     <section class="page-title parallax bg-img-7">
-        <div class="page-title-content" style="background-color: rgba(0, 0, 0, 0.5);">
-            <div class="container">
-                <div class="col-sm-12 text-center white">
-                    <h3>Welcome to the LBTC developer community</h3>
-                    <hr class="separator">
-                    <h5 style="font-size: 14px;">Join us in various types of missions to gain rewards, or let us know if you have suggestions</h5>
-                    <h5 style="font-size: 14px;">Email : <a href="mailto:technology_community@lightningbitcoin.io">technology_community@lightningbitcoin.io</a></h5>
-                </div>
-            </div>
+      <div
+        class="page-title-content"
+        style="background-color: rgba(0, 0, 0, 0.5)"
+      >
+        <div class="container">
+          <div class="col-sm-12 text-center white">
+            <h3>Welcome to the LBTC developer community</h3>
+            <hr class="separator" />
+            <h5 style="font-size: 14px">
+              Join us in various types of missions to gain rewards, or let us
+              know if you have suggestions
+            </h5>
+            <h5 style="font-size: 14px">
+              Email :
+              <a href="mailto:technology_community@lightningbitcoin.io"
+                >technology_community@lightningbitcoin.io</a
+              >
+            </h5>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End Page Hero -->
 
     <!-- Developer -->
     <section id="" class="developer pt100 pb50">
-        <div class="container">
-            <div class="de-title mb50">
-                <h3>Start here</h3>
-            </div>
-            <div class="row">
-
-                <div class="col-md-4 col-sm-6 mb30">
-                    <div class="box box-style2"> 
-                        <span style="float: left; color: #0cb4ce;"><i class="icon-document size-2x"></i></span>
-                        <div class="pl50">
-                            <h4>Development document</h4>
-                            <ul>
-                                <li><a rel="nofollow" href="https://lbtc.io/web/viewer.html" target="_blank">White paper</a></li>
-                                <li><a rel="nofollow" href="https://docs_en.lbtc.io/index.html" target="_blank">LBTC documentation</a></li>
-                                <li><a href="javascript:;" target="_blank">Development guide</a></li>
-                                <!-- <li><a href="javascript:;" target="_blank">...</a></li> -->
-                            </ul>
-                        </div>
-                    </div>                                 
-                </div>
-
-                <div class="col-md-4 col-sm-6 mb30">
-                    <div class="box box-style2"> 
-                        <span style="float: left; color: #0cb4ce;"><i class="icon-tools-2 size-2x"></i></span>
-                        <div class="pl50">
-                            <h4>Development tools</h4>
-                            <ul>
-                                <li><a rel="nofollow" href="https://github.com/lbtcio" target="_blank">LBTC code</a></li>
-                                <li><a rel="nofollow" href="https://explorer.lbtc.io/" target="_blank">Block browser</a></li>
-                                <li><a rel="nofollow" href="https://github.com/lbtcio/lbtc-explorer-api" target="_blank">API</a></li>
-                                <!-- <li><a href="javascript:;" target="_blank">Plugin</a></li> -->
-                                <!-- <li><a href="javascript:;" target="_blank">SDK</a></li> -->
-                            </ul>
-                        </div>
-                    </div>                                 
-                </div>
-
-                <div class="col-md-4 col-sm-6 mb30">
-                    <div class="box box-style2"> 
-                        <span style="float: left; color: #0cb4ce;"><i class="icon-layers size-2x"></i></span>
-                        <div class="pl50">
-                            <h4>Test</h4>
-                            <ul>
-                                <li><a rel="nofollow" href="http://test-explorer.lbtc.io/" target="_blank">Test block browser</a></li>
-                                <li><a href="../bounty/testcoins.html">Apply for test coins</a></li>
-                                <li><a href="../bounty/bugs.html">Submit bugs</a></li>
-                            </ul>
-                        </div>
-                    </div>                                 
-                </div>
-
-            </div>
+      <div class="container">
+        <div class="de-title mb50">
+          <h3>Start here</h3>
         </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb30">
+            <div class="box box-style2">
+              <span style="float: left; color: #0cb4ce"
+                ><i class="icon-document size-2x"></i
+              ></span>
+              <div class="pl50">
+                <h4>Development document</h4>
+                <ul>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://lbtc.io/web/viewer.html"
+                      target="_blank"
+                      >White paper</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://docs_en.lbtc.io/index.html"
+                      target="_blank"
+                      >LBTC documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="javascript:;" target="_blank">Development guide</a>
+                  </li>
+                  <!-- <li><a href="javascript:;" target="_blank">...</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 mb30">
+            <div class="box box-style2">
+              <span style="float: left; color: #0cb4ce"
+                ><i class="icon-tools-2 size-2x"></i
+              ></span>
+              <div class="pl50">
+                <h4>Development tools</h4>
+                <ul>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://github.com/lbtcio"
+                      target="_blank"
+                      >LBTC code</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://explorer.lbtc.io/"
+                      target="_blank"
+                      >Block browser</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://github.com/lbtcio/lbtc-explorer-api"
+                      target="_blank"
+                      >API</a
+                    >
+                  </li>
+                  <!-- <li><a href="javascript:;" target="_blank">Plugin</a></li> -->
+                  <!-- <li><a href="javascript:;" target="_blank">SDK</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 mb30">
+            <div class="box box-style2">
+              <span style="float: left; color: #0cb4ce"
+                ><i class="icon-layers size-2x"></i
+              ></span>
+              <div class="pl50">
+                <h4>Test</h4>
+                <ul>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="http://test-explorer.lbtc.io/"
+                      target="_blank"
+                      >Test block browser</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../bounty/testcoins.html">Apply for test coins</a>
+                  </li>
+                  <li><a href="../bounty/bugs.html">Submit bugs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="bountyPlan" class="developer pt50 pb50" style="display: none">
-        <div class="container">
-            <div class="de-title mb50">
-                <h3>Bounty plan</h3>
-            </div>
-            <div class="row">
-                <div id="bountyPlanContent">
-                    
-                </div>
-            </div>
+      <div class="container">
+        <div class="de-title mb50">
+          <h3>Bounty plan</h3>
         </div>
+        <div class="row">
+          <div id="bountyPlanContent"></div>
+        </div>
+      </div>
     </section>
-    
+
     <section id="" class="developer pt50 pb50">
-        <div class="container">
-            <div class="de-title mb50">
-                <h3>Long-term project</h3>
-            </div>
-            <div class="row">
-
-                <div class="col-md-4 col-sm-6 mb30 box-hover">
-                    <div class="box box-style2 text-center"> 
-                        <a href="javascript:;"><i class="icon-linegraph size-4x"></i></a>
-                        <h4>Full-node wallet optimization</h4>
-                        <p>5-50 LBTC</p>
-                        <a href="../bounty/fullnode.html" data-type="fullnode" class="btn btn-bounty btn-ghost-color">Claim it</a>
-                    </div>                                 
-                </div>
-                
-                <div class="col-md-4 col-sm-6 mb30 box-hover">
-                    <div class="box box-style2 text-center"> 
-                        <a href="javascript:;"><i class="icon-global size-4x"></i></a>
-                        <h4>Explorer optimization</h4>
-                        <p>5-20 LBTC</p>
-                        <a href="../bounty/explorer.html" data-type="explorer" class="btn btn-bounty btn-ghost-color">Claim it</a>
-                    </div>                                 
-                </div>
-
-                <div class="col-md-4 col-sm-6 mb30 box-hover">
-                    <div class="box box-style2 text-center"> 
-                        <a href="javascript:;"><i class="ion-social-android size-4x"></i></a>
-                        <h4>APP wallet optimization</h4>
-                        <p>5-20 LBTC</p>
-                        <a href="../bounty/mobilewallet.html" data-type="mobilewallet" class="btn btn-bounty btn-ghost-color">Claim it</a>
-                    </div>                                 
-                </div>
-
-            </div>
-            <div class="row">
-
-                <div class="col-md-4 col-sm-6 mb30 box-hover">
-                    <div class="box box-style2 text-center"> 
-                        <a href="javascript:;"><i class="ion-ios-shuffle size-4x"></i></a>
-                        <h4>Multilingual translation</h4>
-                        <p>2-10 LBTC</p>
-                        <a href="../bounty/translation.html" data-type="lbtc4" class="btn btn-bounty btn-ghost-color">Claim it</a>
-                    </div>                                 
-                </div>
-
-                <div class="col-md-4 col-sm-6 mb30 box-hover">
-                    <div class="box box-style2 text-center"> 
-                        <a href="javascript:;"><i class="icon-pencil size-4x"></i></a>
-                        <h4>Re-architect our documentation</h4>
-                        <p>2-10 LBTC</p>
-                        <a href="../bounty/doc.html" data-type="lbtc5" class="btn btn-bounty btn-ghost-color">Claim it</a>
-                    </div>                                 
-                </div>
-
-                <div class="col-md-4 col-sm-6 mb30 box-hover">
-                    <div class="box box-style2 text-center"> 
-                        <a href="javascript:;"><i class="icon-video size-4x"></i></a>
-                        <h4>Video tutorial</h4>
-                        <p>2-10 LBTC</p>
-                        <a href="../bounty/video.html" data-type="lbtc6" class="btn btn-bounty btn-ghost-color">Claim it</a>
-                    </div>                                 
-                </div>
-
-            </div>
+      <div class="container">
+        <div class="de-title mb50">
+          <h3>Long-term project</h3>
         </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb30 box-hover">
+            <div class="box box-style2 text-center">
+              <a href="javascript:;"><i class="icon-linegraph size-4x"></i></a>
+              <h4>Full-node wallet optimization</h4>
+              <p>5-50 LBTC</p>
+              <a
+                href="../bounty/fullnode.html"
+                data-type="fullnode"
+                class="btn btn-bounty btn-ghost-color"
+                >Claim it</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 mb30 box-hover">
+            <div class="box box-style2 text-center">
+              <a href="javascript:;"><i class="icon-global size-4x"></i></a>
+              <h4>Explorer optimization</h4>
+              <p>5-20 LBTC</p>
+              <a
+                href="../bounty/explorer.html"
+                data-type="explorer"
+                class="btn btn-bounty btn-ghost-color"
+                >Claim it</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 mb30 box-hover">
+            <div class="box box-style2 text-center">
+              <a href="javascript:;"
+                ><i class="ion-social-android size-4x"></i
+              ></a>
+              <h4>APP wallet optimization</h4>
+              <p>5-20 LBTC</p>
+              <a
+                href="../bounty/mobilewallet.html"
+                data-type="mobilewallet"
+                class="btn btn-bounty btn-ghost-color"
+                >Claim it</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb30 box-hover">
+            <div class="box box-style2 text-center">
+              <a href="javascript:;"><i class="ion-ios-shuffle size-4x"></i></a>
+              <h4>Multilingual translation</h4>
+              <p>2-10 LBTC</p>
+              <a
+                href="../bounty/translation.html"
+                data-type="lbtc4"
+                class="btn btn-bounty btn-ghost-color"
+                >Claim it</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 mb30 box-hover">
+            <div class="box box-style2 text-center">
+              <a href="javascript:;"><i class="icon-pencil size-4x"></i></a>
+              <h4>Re-architect our documentation</h4>
+              <p>2-10 LBTC</p>
+              <a
+                href="../bounty/doc.html"
+                data-type="lbtc5"
+                class="btn btn-bounty btn-ghost-color"
+                >Claim it</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 mb30 box-hover">
+            <div class="box box-style2 text-center">
+              <a href="javascript:;"><i class="icon-video size-4x"></i></a>
+              <h4>Video tutorial</h4>
+              <p>2-10 LBTC</p>
+              <a
+                href="../bounty/video.html"
+                data-type="lbtc6"
+                class="btn btn-bounty btn-ghost-color"
+                >Claim it</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="inProgress" class="developer pt50 pb50" style="display: none;">
-        <div class="container">
-            <div class="de-title mb50">
-                <h3>In Progress</h3>
-            </div>
-            <div class="row">
-                <div id="inProgressContent">
-                    
-                </div>
-            </div>
+    <section id="inProgress" class="developer pt50 pb50" style="display: none">
+      <div class="container">
+        <div class="de-title mb50">
+          <h3>In Progress</h3>
         </div>
+        <div class="row">
+          <div id="inProgressContent"></div>
+        </div>
+      </div>
     </section>
 
-    <section id="done" class="developer pt50 pb50" style="display: none;">
-        <div class="container">
-            <div class="de-title mb50">
-                <h3>Done</h3>
-            </div>
-            <div class="row">
-                <div id="doneContent">
-                    
-                </div>
-            </div>
+    <section id="done" class="developer pt50 pb50" style="display: none">
+      <div class="container">
+        <div class="de-title mb50">
+          <h3>Done</h3>
         </div>
+        <div class="row">
+          <div id="doneContent"></div>
+        </div>
+      </div>
     </section>
     <!-- End Developer -->
 
-
     <!-- Footer One -->
     <footer id="footer-1">
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6 col-sm-12">
-                        <p>© 2019
-                            <a href="/"> Lightning Bitcoin </a>All Rights Reserved. </p>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <ul class="social-icons">
-                            <li>
-                                <a href="../logo.html">
-                                    Press Kit
-                                </a>
-                            </li>
-                            <li>
-                                <a rel="nofollow" href="http://api.lbtc.io/totallbtc" target="_blank">
-                                    Circulation
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:support@lightningbitcoin.io">
-                                    <!-- <i class="icon fa fa-envelope"></i> -->
-                                    Support&nbsp;&amp;&nbsp;Service
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:icey@lightningbitcoin.io">
-                                    <!-- <i class="icon fa fa-envelope-o"></i> -->
-                                    Press&nbsp;&amp;&nbsp;Cooperation
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p>
+                © 2021 <a href="/"> Lightning Bitcoin </a>All Rights Reserved.
+              </p>
             </div>
+            <div class="col-md-6 col-sm-12">
+              <ul class="social-icons">
+                <li>
+                  <a href="../logo.html"> Press Kit </a>
+                </li>
+                <li>
+                  <a
+                    rel="nofollow"
+                    href="http://api.lbtc.io/totallbtc"
+                    target="_blank"
+                  >
+                    Circulation
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:support@lightningbitcoin.io">
+                    <!-- <i class="icon fa fa-envelope"></i> -->
+                    Support&nbsp;&amp;&nbsp;Service
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:icey@lightningbitcoin.io">
+                    <!-- <i class="icon fa fa-envelope-o"></i> -->
+                    Press&nbsp;&amp;&nbsp;Cooperation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- End Footer One -->
 
     <!-- Start Back To Top -->
     <a id="back-to-top">
-        <i class="icon ion-chevron-up"></i>
+      <i class="icon ion-chevron-up"></i>
     </a>
     <!-- End Back To Top -->
 
@@ -351,7 +482,5 @@
     <script src="../js/plugins.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="../js/developer.js"></script>
-    
-</body>
-
+  </body>
 </html>

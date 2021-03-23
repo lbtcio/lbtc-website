@@ -1,310 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="快如闪电,迭代进化,链上治理,去中心化,加密货币,DPOS,闪电比特币,LBTC">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="快如闪电,迭代进化,链上治理,去中心化,加密货币,DPOS,闪电比特币,LBTC"
+    />
     <meta name="description" content="" />
     <title>Submit bugs</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link href="../img/assets/favicon.ico" rel="icon" type="image/png">
-    <link href="../css/plugins.css" rel="stylesheet" type="text/css">
-    <link href="../css/theme.css" rel="stylesheet" type="text/css">
-    <link href="../css/ionicons.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/et-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="../css/themify-icons.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/custom.css" rel="stylesheet" type="text/css">
-    <link href="../css/colors/blue.css" id="color-scheme" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/form.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/bootstrapValidator.css">
-    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link href="../img/assets/favicon.ico" rel="icon" type="image/png" />
+    <link href="../css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="../css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/et-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="../css/themify-icons.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../css/custom.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../css/colors/blue.css"
+      id="color-scheme"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/form.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../css/bootstrapValidator.css" />
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css" />
     <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?d11f8718d2ff01eb6ef3d3727afb08f1";
-            var s = document.getElementsByTagName("script")[0]; 
-            s.parentNode.insertBefore(hm, s);
-        })();
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d11f8718d2ff01eb6ef3d3727afb08f1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
     <style>
-        ul {
-            list-style: disc;
-        }
+      ul {
+        list-style: disc;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar navbar-default fullwidth">
-        <div class="container">
-
-            <div class="navbar-header">
-                <div class="container">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar top-bar"></span>
-                        <span class="icon-bar middle-bar"></span>
-                        <span class="icon-bar bottom-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/logo-w-t-light.png" class="logo-dark" alt="lbtc">
-                    </a>
-                </div>
-            </div>
-
-            <div id="navbar" class="navbar-collapse collapse">
-                <div class="container">
-                    <ul class="nav navbar-nav menu-right">
-
-                        <li class="megamenu">
-                            <a href="../index.html" class="btn-scroll">Home</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="../developer.html" class="btn-scroll">Developer</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="../team.html" class="btn-scroll">Team</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="../index.html#download" class="btn-scroll">Download</a>
-                        </li>
-
-                        <li class="dropdown"><a class="dropdown-toggle">Explorers<i class="ti-angle-down"></i></a> 
-                            <ul class="dropdown-menu">
-                                <li><a rel="nofollow" href="https://explorer.lbtc.io/" target=_blank>Mainnet Explorer</a></li>
-                                <li><a rel="nofollow" href="http://test-explorer.lbtc.io/" target=_blank>Testnet Explorer</a></li> 
-                            </ul>
-                        </li>  
-
-                        <li class="megamenu">
-                            <a rel="nofollow" href="https://chat.lbtc.io/topic/37-faq/" class="btn-scroll" target=_blank>FAQ</a>
-                        </li>
-
-                        <li class="megamenu">
-                            <a href="../index.html#footer-1" class="btn-scroll">Community</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>
+      <div class="container">
+        <div class="navbar-header">
+          <div class="container">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img
+                src="../img/logo-w-t-light.png"
+                class="logo-dark"
+                alt="lbtc"
+              />
+            </a>
+          </div>
         </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="container">
+            <ul class="nav navbar-nav menu-right">
+              <li class="megamenu">
+                <a href="../index.html" class="btn-scroll">Home</a>
+              </li>
+
+              <li class="megamenu">
+                <a href="../developer.html" class="btn-scroll">Developer</a>
+              </li>
+
+              <li class="megamenu">
+                <a href="../team.html" class="btn-scroll">Team</a>
+              </li>
+
+              <li class="megamenu">
+                <a href="../index.html#download" class="btn-scroll">Download</a>
+              </li>
+
+              <li class="dropdown">
+                <a class="dropdown-toggle"
+                  >Explorers<i class="ti-angle-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://explorer.lbtc.io/"
+                      target="_blank"
+                      >Mainnet Explorer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="http://test-explorer.lbtc.io/"
+                      target="_blank"
+                      >Testnet Explorer</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="megamenu">
+                            <a rel="nofollow" href="https://chat.lbtc.io/topic/37-faq/" class="btn-scroll" target=_blank>FAQ</a>
+                        </li> -->
+
+              <li class="megamenu">
+                <a href="../index.html#footer-1" class="btn-scroll"
+                  >Community</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 
-
     <section class="developer pt100 pb90">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-lg-offset-1 pb30" style="border-bottom: 1px solid #eee;">
-                    <div class="de-title mb30">
-                        <h3>处理流程</h3>
-                    </div>
-                    <div class="content">
-                        <h4>
-                            处理阶段
-                        </h4>
-                        <ol>
-                            <li>一个工作日内，LBTC安全团队会确认收到的威胁情报报告并跟进开始评估问题， 同时将情报反馈给 LBTC对接人(状态：审核中)</li>
-                            <li>三到十个工作日内，LBTC技术团队处理问题、给出结论并计分(状态：已确认/已忽略)。必要时会与报告者沟通确认，请报告者予以协助</li>
-                        </ol>
-                        <h4>Bug评级及奖励标准</h4>
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>等级</th>
-                                    <th>LBTC 奖励</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Blocker</td>
-                                    <td>50-88 LBTC</td>
-                                </tr>
-                                <tr>
-                                    <td>Critical</td>
-                                    <td>30-50 LBTC</td>
-                                </tr>
-                                <tr>
-                                    <td>Major</td>
-                                    <td>10-20 LBTC</td>
-                                </tr>
-                                <tr>
-                                    <td>Minor</td>
-                                    <td>2-5 LBTC</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h5>1、Blocker即系统无法执行、崩溃或严重资源不足、应用模块无法启动或异常退出、无法测试、造成系统不稳定。</h5>
-                        <ul>
-                            <li>严重花屏</li>
-                            <li>内存泄漏</li>
-                            <li>用户数据丢失或破坏</li>
-                            <li>系统崩溃/死机/冻结</li>
-                            <li>模块无法启动或异常退出</li>
-                            <li>严重的数值计算错误</li>
-                            <li>功能设计与需求严重不符</li>
-                            <li>其它导致无法测试的错误, 如服务器500错误</li>
-                        </ul>
-                        <h5>2、Critical 即影响系统功能或操作，主要功能存在严重缺陷，但不会影响到系统稳定性。</h5>
-                        <ul>
-                            <li>功能未实现</li>
-                            <li>功能错误</li>
-                            <li>系统刷新错误</li>
-                            <li>数据通讯错误</li>
-                            <li>轻微的数值计算错误</li>
-                            <li>影响功能及界面的错误字或拼写错误</li>
-                            <li>安全性问题</li>
-                        </ul>
-                        <h5>3、Major 即界面、性能缺陷、兼容性。</h5>
-                        <ul>
-                            <li>操作界面错误（包括数据窗口内列名定义、含义是否一致）</li>
-                            <li>边界条件下错误</li>
-                            <li>提示信息错误（包括未给出信息、信息提示错误等）</li>
-                            <li>长时间操作无进度提示</li>
-                            <li>系统未优化（性能问题）</li>
-                            <li>光标跳转设置不好，鼠标（光标）定位错误</li>
-                            <li>兼容性问题</li>
-                        </ul>
-                        <h5>4、Minor 即易用性及建议性问题。</h5>
-                        <ul>
-                            <li>界面格式等不规范</li>
-                            <li>辅助说明描述不清楚</li>
-                            <li>操作时未给用户提示</li>
-                            <li>可输入区域和只读区域没有明显的区分标志</li>
-                            <li>个别不影响产品理解的错别字</li>
-                            <li>文字排列不整齐等一些小问题</li>
-                        </ul>
-                        <h4>漏洞评级及奖励标准</h4>
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>等级</th>
-                                    <th>LBTC 奖励</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>严重</td>
-                                    <td>90-100 LBTC</td>
-                                </tr>
-                                <tr>
-                                    <td>高危</td>
-                                    <td>60-80 LBTC</td>
-                                </tr>
-                                <tr>
-                                    <td>中危</td>
-                                    <td>20-50 LBTC</td>
-                                </tr>
-                                <tr>
-                                    <td>低危</td>
-                                    <td>5-10 LBTC</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p>*备注：最终发放的奖励取决于漏洞严重程度和漏洞真实影响，表格中的数值为各等级最高奖励，严重漏洞奖励会以发放前一日 LBTC/BTC 价格以 LBTC 的形式发放。</p>
-                        <h5>1、严重漏洞</h5>
-                        <p>严重的漏洞是指，发生在核心系统业务系统（核心控制系统、域控、业务分发系统、堡垒机等可管理大量系统的管控系统），可造成大面积影响的，获取大量（依据实际情况酌情限定）业务系统控制权限，获取核心系统管理人员权限并且可控制核心系统。</p>
-                        <p>包括但不限于：</p>
-                        <ul>
-                            <li>内网多台机器控制</li>
-                            <li>核心后台超级管理员权限获取且造成大范围企业核心数据泄露，可造成巨大影响</li>
-                            <li>智能合约溢出、条件竞争漏洞</li>
-                        </ul>
-                        <h5>2、高危漏洞</h5>
-                        <ul>
-                            <li>系统的权限获得（getshell、命令执行等）</li>
-                            <li>系统的 SQL 注入（后台漏洞降级，打包提交酌情提升）</li>
-                            <li>敏感信息越权访问。包括但不仅限于绕过认证直接访问管理后台、重要后台弱密码、获取大量内网敏感信息的 SSRF 等）</li>
-                            <li>任意⽂件读取</li>
-                            <li>可获取任意信息的 XXE 漏洞</li>
-                            <li>涉及金钱的越权操作、支付逻辑绕过（需最终利用成功）</li>
-                            <li>严重的逻辑设计缺陷和流程缺陷。包括但不仅限于任意用户登录漏洞、批量修改任意账号密码漏洞、涉及企业核心业务的逻辑漏洞等，验证码爆破除外</li>
-                            <li>大范围影响用户的其他漏洞。包括但不仅限于重要页面可自动传播的存储型 XSS、可获取管理员认证信息且成功利用的存储型 XSS 等</li>
-                            <li>大量源代码泄露</li>
-                            <li>智能合约权限控制缺陷</li>
-                        </ul>
-                        <h5>中危漏洞</h5>
-                        <ul>
-                            <li>需交互方可影响用户的漏洞。包括但不仅限于一般页面的存储型 XSS，涉及核心业务的 CSRF 等</li>
-                            <li>普通越权操作。包括但不限于绕过限制修改用户资料、执行用户操作等</li>
-                            <li>拒绝服务漏洞。包括但不限于导致网站应用拒绝服务等造成影响的远程拒绝服务漏洞等</li>
-                            <li>由验证码逻辑导致任意账户登陆、任意密码找回等系统敏感操作可被爆破成功造成的漏洞</li>
-                            <li>本地保存的敏感认证密钥信息泄露，需能做出有效利用</li>
-                        </ul>
-                        <h5>3、低危漏洞</h5>
-                        <ul>
-                            <li>本地拒绝服务漏洞。包括但不仅限于客户端本地拒绝服务（解析文件格式、网络协议产生的崩溃），由 Android 组件权限暴露、普通应用权限引起的问题等</li>
-                            <li>普通信息泄露。包括但不限于 Web 路径遍历、系统路径遍历、目录浏览等</li>
-                            <li>反射型 XSS（包括 DOM XSS / Flash XSS）</li>
-                            <li>普通 CSRF</li>
-                            <li>URL 跳转漏洞</li>
-                            <li>短信炸弹、邮件炸弹（每个系统只收一个此类型漏洞）</li>
-                            <li>其他危害较低、不能证明危害的漏洞（如无法获取到敏感信息的 CORS 漏洞）</li>
-                            <li>无回显的且没有深入利用成功的 SSRF</li>
-                        </ul>
-                        <p>此处参考了 <strong><a rel="nofollow" href="https://xianzhi.aliyun.com/productitem/index.htm" target="_blank">先知漏洞定级标准</a></strong> ，在此表示感谢。</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-9 col-lg-offset-1 pb30"
+            style="border-bottom: 1px solid #eee"
+          >
+            <div class="de-title mb30">
+              <h3>处理流程</h3>
             </div>
+            <div class="content">
+              <h4>处理阶段</h4>
+              <ol>
+                <li>
+                  一个工作日内，LBTC安全团队会确认收到的威胁情报报告并跟进开始评估问题，
+                  同时将情报反馈给 LBTC对接人(状态：审核中)
+                </li>
+                <li>
+                  三到十个工作日内，LBTC技术团队处理问题、给出结论并计分(状态：已确认/已忽略)。必要时会与报告者沟通确认，请报告者予以协助
+                </li>
+              </ol>
+              <h4>Bug评级及奖励标准</h4>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>等级</th>
+                    <th>LBTC 奖励</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Blocker</td>
+                    <td>50-88 LBTC</td>
+                  </tr>
+                  <tr>
+                    <td>Critical</td>
+                    <td>30-50 LBTC</td>
+                  </tr>
+                  <tr>
+                    <td>Major</td>
+                    <td>10-20 LBTC</td>
+                  </tr>
+                  <tr>
+                    <td>Minor</td>
+                    <td>2-5 LBTC</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5>
+                1、Blocker即系统无法执行、崩溃或严重资源不足、应用模块无法启动或异常退出、无法测试、造成系统不稳定。
+              </h5>
+              <ul>
+                <li>严重花屏</li>
+                <li>内存泄漏</li>
+                <li>用户数据丢失或破坏</li>
+                <li>系统崩溃/死机/冻结</li>
+                <li>模块无法启动或异常退出</li>
+                <li>严重的数值计算错误</li>
+                <li>功能设计与需求严重不符</li>
+                <li>其它导致无法测试的错误, 如服务器500错误</li>
+              </ul>
+              <h5>
+                2、Critical
+                即影响系统功能或操作，主要功能存在严重缺陷，但不会影响到系统稳定性。
+              </h5>
+              <ul>
+                <li>功能未实现</li>
+                <li>功能错误</li>
+                <li>系统刷新错误</li>
+                <li>数据通讯错误</li>
+                <li>轻微的数值计算错误</li>
+                <li>影响功能及界面的错误字或拼写错误</li>
+                <li>安全性问题</li>
+              </ul>
+              <h5>3、Major 即界面、性能缺陷、兼容性。</h5>
+              <ul>
+                <li>操作界面错误（包括数据窗口内列名定义、含义是否一致）</li>
+                <li>边界条件下错误</li>
+                <li>提示信息错误（包括未给出信息、信息提示错误等）</li>
+                <li>长时间操作无进度提示</li>
+                <li>系统未优化（性能问题）</li>
+                <li>光标跳转设置不好，鼠标（光标）定位错误</li>
+                <li>兼容性问题</li>
+              </ul>
+              <h5>4、Minor 即易用性及建议性问题。</h5>
+              <ul>
+                <li>界面格式等不规范</li>
+                <li>辅助说明描述不清楚</li>
+                <li>操作时未给用户提示</li>
+                <li>可输入区域和只读区域没有明显的区分标志</li>
+                <li>个别不影响产品理解的错别字</li>
+                <li>文字排列不整齐等一些小问题</li>
+              </ul>
+              <h4>漏洞评级及奖励标准</h4>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>等级</th>
+                    <th>LBTC 奖励</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>严重</td>
+                    <td>90-100 LBTC</td>
+                  </tr>
+                  <tr>
+                    <td>高危</td>
+                    <td>60-80 LBTC</td>
+                  </tr>
+                  <tr>
+                    <td>中危</td>
+                    <td>20-50 LBTC</td>
+                  </tr>
+                  <tr>
+                    <td>低危</td>
+                    <td>5-10 LBTC</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                *备注：最终发放的奖励取决于漏洞严重程度和漏洞真实影响，表格中的数值为各等级最高奖励，严重漏洞奖励会以发放前一日
+                LBTC/BTC 价格以 LBTC 的形式发放。
+              </p>
+              <h5>1、严重漏洞</h5>
+              <p>
+                严重的漏洞是指，发生在核心系统业务系统（核心控制系统、域控、业务分发系统、堡垒机等可管理大量系统的管控系统），可造成大面积影响的，获取大量（依据实际情况酌情限定）业务系统控制权限，获取核心系统管理人员权限并且可控制核心系统。
+              </p>
+              <p>包括但不限于：</p>
+              <ul>
+                <li>内网多台机器控制</li>
+                <li>
+                  核心后台超级管理员权限获取且造成大范围企业核心数据泄露，可造成巨大影响
+                </li>
+                <li>智能合约溢出、条件竞争漏洞</li>
+              </ul>
+              <h5>2、高危漏洞</h5>
+              <ul>
+                <li>系统的权限获得（getshell、命令执行等）</li>
+                <li>系统的 SQL 注入（后台漏洞降级，打包提交酌情提升）</li>
+                <li>
+                  敏感信息越权访问。包括但不仅限于绕过认证直接访问管理后台、重要后台弱密码、获取大量内网敏感信息的
+                  SSRF 等）
+                </li>
+                <li>任意⽂件读取</li>
+                <li>可获取任意信息的 XXE 漏洞</li>
+                <li>涉及金钱的越权操作、支付逻辑绕过（需最终利用成功）</li>
+                <li>
+                  严重的逻辑设计缺陷和流程缺陷。包括但不仅限于任意用户登录漏洞、批量修改任意账号密码漏洞、涉及企业核心业务的逻辑漏洞等，验证码爆破除外
+                </li>
+                <li>
+                  大范围影响用户的其他漏洞。包括但不仅限于重要页面可自动传播的存储型
+                  XSS、可获取管理员认证信息且成功利用的存储型 XSS 等
+                </li>
+                <li>大量源代码泄露</li>
+                <li>智能合约权限控制缺陷</li>
+              </ul>
+              <h5>中危漏洞</h5>
+              <ul>
+                <li>
+                  需交互方可影响用户的漏洞。包括但不仅限于一般页面的存储型
+                  XSS，涉及核心业务的 CSRF 等
+                </li>
+                <li>
+                  普通越权操作。包括但不限于绕过限制修改用户资料、执行用户操作等
+                </li>
+                <li>
+                  拒绝服务漏洞。包括但不限于导致网站应用拒绝服务等造成影响的远程拒绝服务漏洞等
+                </li>
+                <li>
+                  由验证码逻辑导致任意账户登陆、任意密码找回等系统敏感操作可被爆破成功造成的漏洞
+                </li>
+                <li>本地保存的敏感认证密钥信息泄露，需能做出有效利用</li>
+              </ul>
+              <h5>3、低危漏洞</h5>
+              <ul>
+                <li>
+                  本地拒绝服务漏洞。包括但不仅限于客户端本地拒绝服务（解析文件格式、网络协议产生的崩溃），由
+                  Android 组件权限暴露、普通应用权限引起的问题等
+                </li>
+                <li>
+                  普通信息泄露。包括但不限于 Web
+                  路径遍历、系统路径遍历、目录浏览等
+                </li>
+                <li>反射型 XSS（包括 DOM XSS / Flash XSS）</li>
+                <li>普通 CSRF</li>
+                <li>URL 跳转漏洞</li>
+                <li>短信炸弹、邮件炸弹（每个系统只收一个此类型漏洞）</li>
+                <li>
+                  其他危害较低、不能证明危害的漏洞（如无法获取到敏感信息的 CORS
+                  漏洞）
+                </li>
+                <li>无回显的且没有深入利用成功的 SSRF</li>
+              </ul>
+              <p>
+                此处参考了
+                <strong
+                  ><a
+                    rel="nofollow"
+                    href="https://xianzhi.aliyun.com/productitem/index.htm"
+                    target="_blank"
+                    >先知漏洞定级标准</a
+                  ></strong
+                >
+                ，在此表示感谢。
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- Footer One -->
     <footer id="footer-1">
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6 col-sm-12">
-                        <p>© 2019
-                            <a href="/"> Lightning Bitcoin </a>All Rights Reserved. </p>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <ul class="social-icons">
-                            <li>
-                                <a href="">
-                                    Press Kit
-                                </a>
-                            </li>
-                            <li>
-                                <a rel="nofollow" href="http://api.lbtc.io/totallbtc" target="_blank">
-                                    Circulation
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:support@lightningbitcoin.io">
-                                    <!-- <i class="icon fa fa-envelope"></i> -->
-                                    Support&nbsp;&amp;&nbsp;Service
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:icey@lightningbitcoin.io">
-                                    <!-- <i class="icon fa fa-envelope-o"></i> -->
-                                    Press&nbsp;&amp;&nbsp;Cooperation
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p>
+                © 2021 <a href="/"> Lightning Bitcoin </a>All Rights Reserved.
+              </p>
             </div>
+            <div class="col-md-6 col-sm-12">
+              <ul class="social-icons">
+                <li>
+                  <a href=""> Press Kit </a>
+                </li>
+                <li>
+                  <a
+                    rel="nofollow"
+                    href="http://api.lbtc.io/totallbtc"
+                    target="_blank"
+                  >
+                    Circulation
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:support@lightningbitcoin.io">
+                    <!-- <i class="icon fa fa-envelope"></i> -->
+                    Support&nbsp;&amp;&nbsp;Service
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:icey@lightningbitcoin.io">
+                    <!-- <i class="icon fa fa-envelope-o"></i> -->
+                    Press&nbsp;&amp;&nbsp;Cooperation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        
+      </div>
     </footer>
     <!-- End Footer One -->
 
     <!-- Start Back To Top -->
     <a id="back-to-top">
-        <i class="icon ion-chevron-up"></i>
+      <i class="icon ion-chevron-up"></i>
     </a>
     <!-- End Back To Top -->
 
@@ -317,9 +417,6 @@
     <script src="../js/bootstrap-datetimepicker.js"></script>
     <script src="../js/moment.js"></script>
 
-    <script>
-    </script>
-
-</body>
-
+    <script></script>
+  </body>
 </html>
